@@ -59,7 +59,7 @@ for lineage in lineages_yml:
 #Load json file
 
 # agg_df = pd.read_csv('agg-masters.tsv', skipinitialspace=True, sep='\t',index_col=0) 
-agg_df = pd.read_csv('agg_demixed.tsv', skipinitialspace=True, sep='\t',index_col=0) 
+agg_df = pd.read_csv('../agg_demixed.tsv', skipinitialspace=True, sep='\t',index_col=0) 
 agg_df = agg_df[agg_df['coverage']>50.0] 
 
 
@@ -92,44 +92,33 @@ agg_df.loc[:, 'linDict'] = processed_linDictMod
 agg_df.index = [adi.replace('_','-').replace('ENV-','').replace('ENC-','').replace('.tsv','') for adi in agg_df.index]
 agg_df.index  = ['-'.join(adi.split('-')[0:3]) if (adi[0:3]=='NIC' or adi[0:3]=='COV') else '-'.join(adi.split('-')[0:2]) for adi in agg_df.index ]
 
-times_df = pd.read_csv('../metadata.csv', skipinitialspace=True,index_col=0)
-times_df['sample_collection_datetime'] = pd.to_datetime(times_df['sample_collection_datetime'])
-times_df.index = [tdi.split('-variants')[0] for tdi in times_df.index]
+times_df = pd.read_csv('../sample_metadata.csv', skipinitialspace=True)
+times_df['LabNumber'] = times_df['LabNumber'].apply(lambda x:x.replace('ENV-',''))
+times_df = times_df.set_index('LabNumber')
+times_df['SampleCollectionDate'] = pd.to_datetime(times_df['SampleCollectionDate'])
+#if exact duplicate, drop
+times_df = times_df.loc[~times_df.duplicated(keep='first')]
 
-meta_df = pd.read_excel('Metadata.xlsx')
-meta_df['SampleCollectionDate'] = pd.to_datetime(meta_df['SampleCollectionDate'])
-# meta_df = meta_df[meta_df['SampleCollectionDate']>'2022-01-01']
-meta_df['LabNumber'] = [adi.replace('ENV-','') for adi in meta_df['LabNumber']]
-meta_df = meta_df.set_index('LabNumber')
-meta_df = meta_df[~meta_df.index.duplicated(keep='first')] #drop duplicates rows in the metadata file
-times_df = meta_df
+# meta_df = pd.read_excel('Metadata.xlsx')
+# meta_df['SampleCollectionDate'] = pd.to_datetime(meta_df['SampleCollectionDate'])
+# # meta_df = meta_df[meta_df['SampleCollectionDate']>'2022-01-01']
+# meta_df['LabNumber'] = [adi.replace('ENV-','') for adi in meta_df['LabNumber']]
+# meta_df = meta_df.set_index('LabNumber')
+# meta_df = meta_df[~meta_df.index.duplicated(keep='first')] #drop duplicates rows in the metadata file
+# times_df = meta_df
 
 
-h0 = [agi for agi in agg_df.index if agi in meta_df.index]
-hN = [agi for agi in agg_df.index if ('NIC-'+agi) in meta_df.index]
-hC = [agi for agi in agg_df.index if ('COV-'+agi) in meta_df.index]
+h0 = [agi for agi in agg_df.index if agi in times_df.index]
 
-hNplus = [('NIC-'+agi) for agi in hN]
-hCplus = [('COV-'+agi) for agi in hC]
-# replace the relevant names in the agg file. 
-if len(set(hNplus) & set(h0))>0:
-    print('Name conflict.',set(hNplus) & set(h0))
+hMissing = [agi for agi in agg_df.index if agi not in times_df.index]
+if len(hMissing)>0:
+    print('Not all samples are in metadata.')
+    print("Missing ", hMissing)
 
-if len(set(hCplus) & set(h0))>0:
-    print('Name conflict.',set(hCplus) & set(h0))
-    # exit(1)
-
-if len(set(hN) & set(hC))>0:
-    print('Name conflict.')
-    # exit(1)
-
-h = [('NIC-'+agi) if agi in hN else agi for agi in agg_df.index]
-h = [('COV-'+agi) if agi in hC else agi for agi in h]
-
-agg_df.index = h
-
-agg_df = agg_df[~agg_df.index.duplicated(keep='first')]
-agg_df = agg_df.loc[np.unique(h0+hNplus+hCplus)] #for now, only keep things in provided metadata
+duplicates = agg_df[agg_df.index.duplicated(keep=False)]
+if len(duplicates)>0:
+    print('Samples are duplicated.')
+    print(duplicates)
 
 queryType = "linDict"
 # build a dataframe 
@@ -159,7 +148,7 @@ df_abundances = df_abundances.loc[df_abundances.index>="2022-04-01"]
 
 df2 = pd.melt(df_abundances.reset_index(), id_vars='index')
 df2.columns = ['collection_date', 'lineage', 'abundance']
-df2.to_csv('../aggregated_dated.csv')
+df2.to_csv('aggregated_dated.csv')
 ### in case of round off error, we'll add the leftover bits to Other. 
 
 df_abundances['Other'] += 1.- df_abundances.sum(axis=1)
