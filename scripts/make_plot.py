@@ -144,7 +144,7 @@ for i, sampLabel in enumerate(agg_df.index):
 
 # fill nans, group data by the appropriate interval
 df_abundances = df_abundances.fillna(0).T
-df_abundances = df_abundances.loc[df_abundances.index>="2022-04-01"]
+# df_abundances = df_abundances.loc[df_abundances.index>="2022-04-01"]
 
 df2 = pd.melt(df_abundances.reset_index(), id_vars='index')
 df2.columns = ['collection_date', 'lineage', 'abundance']
