@@ -1,0 +1,6 @@
+	../variants/ENV-COV-23-0727.tsv
+summarized	[('XBB.1.5* [Omicron (XBB.1.5.X)]', 0.9999999999874224)]
+lineages	XBB.1.5.84 FT.3 XBB.1.5.40
+abundances	0.99946400 0.00049383 0.00004217
+resid	4.803677996537624
+coverage	35.197137410962114
