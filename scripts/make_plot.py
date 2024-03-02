@@ -92,6 +92,8 @@ agg_df.loc[:, 'linDict'] = processed_linDictMod
 agg_df.index = [adi.replace('_','-').replace('ENV-','').replace('ENC-','').replace('.tsv','') for adi in agg_df.index]
 agg_df.index  = ['-'.join(adi.split('-')[0:3]) if (adi[0:3]=='NIC' or adi[0:3]=='COV') else '-'.join(adi.split('-')[0:2]) for adi in agg_df.index ]
 
+agg_df = agg_df[['linDict']]
+
 times_df = pd.read_csv('../sample_metadata.csv', skipinitialspace=True)
 times_df['LabNumber'] = times_df['LabNumber'].apply(lambda x:x.replace('ENV-',''))
 times_df = times_df.set_index('LabNumber')
@@ -99,6 +101,15 @@ times_df['SampleCollectionDate'] = pd.to_datetime(times_df['SampleCollectionDate
 #if exact duplicate, drop
 times_df = times_df.loc[~times_df.duplicated(keep='first')]
 
+
+merged_df = times_df.merge(agg_df,left_index=True,right_index=True)
+merged_df['Lineages']= merged_df['linDict'].apply(lambda x: ' '.join(x.keys()))
+merged_df['Abundances']= merged_df['linDict'].apply(lambda x: list(x.values()))
+merged_df = merged_df.drop(columns=['linDict'])
+merged_df.to_csv('merged_data.tsv',sep='\t')
+
+# merged_df.to_csv()
+# asdf
 # meta_df = pd.read_excel('Metadata.xlsx')
 # meta_df['SampleCollectionDate'] = pd.to_datetime(meta_df['SampleCollectionDate'])
 # # meta_df = meta_df[meta_df['SampleCollectionDate']>'2022-01-01']
