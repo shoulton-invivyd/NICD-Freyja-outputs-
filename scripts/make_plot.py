@@ -226,6 +226,8 @@ df_ = df.groupby(pd.Grouper(freq='D')).mean()
 windowSize=28
 df_ = df_.rolling(windowSize, center=True,min_periods=0).mean()
 
+df_.to_csv('NICD_daily_smoothed.csv')
+
 fig,ax = plt.subplots(figsize=(10.5,5))
 ax.stackplot(df_.index,df_.T,labels=df_.columns,colors=colors0)
 locator = mdates.MonthLocator(bymonthday=1)
