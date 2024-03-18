@@ -1,8 +1,8 @@
 # Configuration file for plotting colors, with inheritance shown with similar colors.  
-BA.2.87.X:
-  name: "BA.2.87.X"
+BA.2.87.1.X:
+  name: "BA.2.87.1.X"
   members:
-    - "BA.2.87*"
+    - "BA.2.87.1*"
   parent: "BA.2.X"
 
 
