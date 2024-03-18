@@ -1,15 +1,12 @@
 import pandas as pd
-import pickle
 import json
-import requests
 import matplotlib.pyplot as plt
 import matplotlib
 import matplotlib.dates as mdates
-from scipy import signal
-from datetime import date,timedelta
+from datetime import timedelta
 import yaml
 import copy
-import numpy as np 
+# import numpy as np 
 
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
@@ -62,10 +59,10 @@ for lineage in lineages_yml:
 agg_df = pd.read_csv('../agg_demixed.tsv', skipinitialspace=True, sep='\t',index_col=0) 
 agg_df = agg_df[agg_df['coverage']>50.0] 
 
-
 from freyja.utils import prepLineageDict, prepSummaryDict
-agg_df = prepSummaryDict(agg_df)
+# agg_df = prepSummaryDict(agg_df)
 agg_df = prepLineageDict(agg_df,thresh=0.0000000001,config=plot_config,lineage_info=lineage_info)
+
 
 #group other recombinants, move everything else to "Other"
 groupNames = set(list(plot_config.keys()))
@@ -144,7 +141,7 @@ for i, sampLabel in enumerate(agg_df.index):
 
 # fill nans, group data by the appropriate interval
 df_abundances = df_abundances.fillna(0).T
-# df_abundances = df_abundances.loc[df_abundances.index>="2022-04-01"]
+df_abundances = df_abundances.loc[df_abundances.index>="2021-12-01"]
 
 df2 = pd.melt(df_abundances.reset_index(), id_vars='index')
 df2.columns = ['collection_date', 'lineage', 'abundance']
@@ -209,6 +206,8 @@ ax.legend(handles[::-1], labels[::-1],loc='center left', bbox_to_anchor=(1, 0.5)
 fig.tight_layout()
 plt.savefig('../figures/NICD_stackplot_weekly.pdf')
 
+# from datetime import date
+from epiweeks import Week
 
 ### average across days, rolling 
 df_ = df.groupby(pd.Grouper(freq='D')).mean()
@@ -220,11 +219,41 @@ ax.stackplot(df_.index,df_.T,labels=df_.columns,colors=colors0)
 locator = mdates.MonthLocator(bymonthday=1)
 ax.xaxis.set_major_locator(locator)
 ax.xaxis.set_major_formatter(mdates.ConciseDateFormatter(locator))
-handles, labels = ax.get_legend_handles_labels()
-ax.legend(handles[::-1], labels[::-1],loc='center left', bbox_to_anchor=(1, 0.5))
+# handles, labels = ax.get_legend_handles_labels()
+# ax.legend(handles[::-1], labels[::-1],loc='center left', bbox_to_anchor=(1, 0.5))
 ax.set_xlim(df_.index.min(),df_.index.max())
 ax.set_ylim(0,1)
 ax.set_ylabel('Lineage prevalence')
+
+
+startWeek = Week.fromdate(df_.index[0])
+datesList, datesLabels = [],[]
+cWeek = startWeek
+while pd.Timestamp(cWeek.startdate()) <= df_.index.max():
+    datesList.append(matplotlib.dates.date2num(cWeek.startdate()))
+    datesLabels.append(cWeek.weektuple()[1])
+    cWeek = cWeek+4
+
+ax2 = ax.twiny()
+ax2.set_xlim(df_.index.min(),df_.index.max())
+# xtickslocs = matplotlib.dates.num2date(ax2.get_xticks())
+# epiweeks = [Week.fromdate(xtl).weektuple()[1] for xtl in xtickslocs]
+ax2.set_xticks(datesList)
+ax2.set_xticklabels(datesLabels)
+# ax2.spines['top'].set_position(('axes', -0.15))
+# ax2.spines['top'].set_visible(True)
+# #option 1
+# ax2.xaxis.set_ticks_position('bottom') # set the position of the second x-axis to bottom
+# ax2.xaxis.set_label_position('bottom') # set the position of the second x-axis to bottom
+# ax2.spines['bottom'].set_position(('outward', 24))
+# ax2.set_xlabel('Epiweek')
+
+#option 2
+ax2.xaxis.set_ticks_position('top') # set the position of the second x-axis to bottom
+ax2.xaxis.set_label_position('top') # set the position of the second x-axis to bottom
+# ax2.spines['top'].set_position(('outward', 24))
+ax2.set_xlabel('Epiweek')
+
 fig.tight_layout()
 
 plt.savefig('../figures/NICD_stackplot_daily.pdf')
