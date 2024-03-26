@@ -255,17 +255,17 @@ ax2.set_xticks(datesList)
 ax2.set_xticklabels(datesLabels)
 # ax2.spines['top'].set_position(('axes', -0.15))
 # ax2.spines['top'].set_visible(True)
-# #option 1
-# ax2.xaxis.set_ticks_position('bottom') # set the position of the second x-axis to bottom
-# ax2.xaxis.set_label_position('bottom') # set the position of the second x-axis to bottom
-# ax2.spines['bottom'].set_position(('outward', 24))
-# ax2.set_xlabel('Epiweek')
-
-#option 2
-ax2.xaxis.set_ticks_position('top') # set the position of the second x-axis to bottom
-ax2.xaxis.set_label_position('top') # set the position of the second x-axis to bottom
-# ax2.spines['top'].set_position(('outward', 24))
+#option 1
+ax2.xaxis.set_ticks_position('bottom') # set the position of the second x-axis to bottom
+ax2.xaxis.set_label_position('bottom') # set the position of the second x-axis to bottom
+ax2.spines['bottom'].set_position(('outward', 24))
 ax2.set_xlabel('Epiweek')
+
+# #option 2
+# ax2.xaxis.set_ticks_position('top') # set the position of the second x-axis to bottom
+# ax2.xaxis.set_label_position('top') # set the position of the second x-axis to bottom
+# # ax2.spines['top'].set_position(('outward', 24))
+# ax2.set_xlabel('Epiweek')
 
 fig.tight_layout()
 
