@@ -1,6 +1,6 @@
-	../variants/ENV-NIC-23-1179.tsv
-summarized	[('BA.2.86* (BA.2.86X)', 0.999640999998936), ('Omicron', 0.0003589999960055027)]
-lineages	BA.2.86.3 BA.2.3.16 BA.2.3.17 BA.2.3.18
-abundances	0.99964100 0.00016057 0.00011708 0.00008135
-resid	11.163968459776243
+	/RAW/Depths_TSV_all_copy_B/TSV_all/TSV/ENV-NIC-23-1179.tsv
+summarized	[('BA.2.86* (BA.2.86X)', 0.9996409999989956)]
+lineages	BA.2.86.3
+abundances	0.99964100
+resid	11.164151892353376
 coverage	95.09079356586295

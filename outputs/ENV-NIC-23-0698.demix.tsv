@@ -1,6 +1,6 @@
-	../variants/ENV-NIC-23-0698.tsv
-summarized	[('Other', 0.9999999999971073)]
+	/RAW/Depths_TSV_all_copy_B/TSV_all/TSV/ENV-NIC-23-0698.tsv
+summarized	[('Other', 0.9999999999971155)]
 lineages	B.1.1.38
 abundances	1.00000000
-resid	1.6033514214859492e-13
+resid	1.5162818173531234e-13
 coverage	0.0
