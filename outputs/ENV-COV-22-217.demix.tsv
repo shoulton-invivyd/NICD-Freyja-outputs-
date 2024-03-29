@@ -1,6 +1,6 @@
-	../variants/ENV-COV-22-217.tsv
-summarized	[('Omicron', 0.9999999985395605)]
-lineages	BA.5.11 XT DE.1
-abundances	0.99951400 0.00026042 0.00022558
-resid	2.518044527907813
+	/RAW/Depths_TSV_all_copy_B/TSV_all/TSV/ENV-COV-22-217.tsv
+summarized	[('Omicron', 0.9995139998851181)]
+lineages	BA.5.11
+abundances	0.99951400
+resid	2.5180444946749274
 coverage	47.54372470989533

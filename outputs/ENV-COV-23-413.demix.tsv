@@ -1,6 +1,6 @@
-	../variants/ENV-COV-23-413.tsv
-summarized	[('XBB.1.5* [Omicron (XBB.1.5.X)]', 0.9999999999997787)]
-lineages	GK.10 JD.1.1.4
+	/RAW/Depths_TSV_all_copy_B/TSV_all/TSV/ENV-COV-23-413.tsv
+summarized	[('XBB.1.5* [Omicron (XBB.1.5.X)]', 0.9999999999997788)]
+lineages	JD.1.1.4 GK.10
 abundances	0.50000000 0.50000000
-resid	9.878830357906271e-14
+resid	1.1414523629956625e-13
 coverage	0.0
