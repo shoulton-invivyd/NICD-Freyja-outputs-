@@ -91,30 +91,25 @@ agg_df.index  = ['-'.join(adi.split('-')[0:3]) if (adi[0:3]=='NIC' or adi[0:3]==
 
 agg_df = agg_df[['linDict']]
 
-times_df = pd.read_csv('../sample_metadata.csv', skipinitialspace=True)
+times_df = pd.read_csv('../sample_metadata.csv', skipinitialspace=True).dropna().reset_index(drop=True)
+times_df['Sequence_ID'] = times_df['Sequence_ID'].apply(lambda x:x.replace('_','-').replace('ENV-','').split('.')[0])
+
 times_df['LabNumber'] = times_df['LabNumber'].apply(lambda x:x.replace('ENV-',''))
+dupMeta = times_df.loc[times_df['LabNumber'].duplicated(keep='first'),'LabNumber'].to_list()
+if len(dupMeta)>0:
+    print('lab numbers are duplicated.')
+    print(dupMeta)
+
 times_df = times_df.set_index('LabNumber')
 times_df['SampleCollectionDate'] = pd.to_datetime(times_df['SampleCollectionDate'])
 #if exact duplicate, drop
 times_df = times_df.loc[~times_df.duplicated(keep='first')]
-
 
 merged_df = times_df.merge(agg_df,left_index=True,right_index=True)
 merged_df['Lineages']= merged_df['linDict'].apply(lambda x: ' '.join(x.keys()))
 merged_df['Abundances']= merged_df['linDict'].apply(lambda x: list(x.values()))
 merged_df = merged_df.drop(columns=['linDict'])
 merged_df.to_csv('merged_data.tsv',sep='\t')
-
-# merged_df.to_csv()
-# asdf
-# meta_df = pd.read_excel('Metadata.xlsx')
-# meta_df['SampleCollectionDate'] = pd.to_datetime(meta_df['SampleCollectionDate'])
-# # meta_df = meta_df[meta_df['SampleCollectionDate']>'2022-01-01']
-# meta_df['LabNumber'] = [adi.replace('ENV-','') for adi in meta_df['LabNumber']]
-# meta_df = meta_df.set_index('LabNumber')
-# meta_df = meta_df[~meta_df.index.duplicated(keep='first')] #drop duplicates rows in the metadata file
-# times_df = meta_df
-
 
 h0 = [agi for agi in agg_df.index if agi in times_df.index]
 
@@ -132,7 +127,13 @@ queryType = "linDict"
 # build a dataframe 
 df_abundances = pd.DataFrame()
 for i, sampLabel in enumerate(agg_df.index):
+
+    if sampLabel in hMissing or sampLabel in dupMeta:
+        # this needs to be fixed ASAP. 
+        # for now we skip things that are not in the metadata. 
+        continue
     dat = agg_df.loc[sampLabel, queryType]
+    
     if isinstance(dat, list):
         df_abundances = pd.concat([
             df_abundances,
@@ -186,11 +187,15 @@ for i in range(0, df_.shape[1]):
     # ax.stackplot(df_.index,df_.T,labels=df_.columns,colors=colors0)
 ax.set_xlim(df_.index.min()-timedelta(days=15),df_.index.max()+timedelta(days=15))
 ax.set_ylim(0,1)
+ax.set_ylabel('Lineage prevalence')
+
 locator = mdates.MonthLocator(bymonthday=1)
 ax.xaxis.set_major_locator(locator)
 ax.xaxis.set_major_formatter(mdates.ConciseDateFormatter(locator))
 handles, labels = ax.get_legend_handles_labels()
-ax.legend(handles[::-1], labels[::-1],loc='center left', bbox_to_anchor=(1, 0.5))
+ax.legend(handles[::-1], labels[::-1], loc='upper center', bbox_to_anchor=(0.5,-.08),
+          ncol=7, fancybox=False, shadow=False)
+
 fig.tight_layout()
 
 plt.savefig('../figures/NICD_stackplot_Monthly.pdf')
@@ -209,11 +214,14 @@ for i in range(0, df_.shape[1]):
 # ax.stackplot(df_.index,df_.T,labels=df_.columns,colors=colors0)
 ax.set_xlim(df_.index.min()-timedelta(days=15),df_.index.max()+timedelta(days=15))
 ax.set_ylim(0,1)
+ax.set_ylabel('Lineage prevalence')
+
 locator = mdates.MonthLocator(bymonthday=1)
 ax.xaxis.set_major_locator(locator)
 ax.xaxis.set_major_formatter(mdates.ConciseDateFormatter(locator))
 handles, labels = ax.get_legend_handles_labels()
-ax.legend(handles[::-1], labels[::-1],loc='center left', bbox_to_anchor=(1, 0.5))
+ax.legend(handles[::-1], labels[::-1], loc='upper center', bbox_to_anchor=(0.5,-.08),
+          ncol=7, fancybox=False, shadow=False)
 fig.tight_layout()
 plt.savefig('../figures/NICD_stackplot_weekly.pdf')
 
@@ -266,7 +274,9 @@ ax2.set_xlabel('Epiweek')
 # ax2.xaxis.set_label_position('top') # set the position of the second x-axis to bottom
 # # ax2.spines['top'].set_position(('outward', 24))
 # ax2.set_xlabel('Epiweek')
-
+handles, labels = ax.get_legend_handles_labels()
+ax.legend(handles[::-1], labels[::-1], loc='upper center', bbox_to_anchor=(0.5,-.28),
+          ncol=7, fancybox=False, shadow=False)
 fig.tight_layout()
 
 plt.savefig('../figures/NICD_stackplot_daily.pdf')
