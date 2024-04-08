@@ -5,12 +5,17 @@ BA.2.87.1.X:
     - "BA.2.87.1*"
   parent: "BA.2.X"
 
+JN.1.X:
+  name: "JN.1.X"
+  members:
+    - "JN.1*"
+  parent: "BA.2.86.X"
 
 BA.2.86.X:
   name: "BA.2.86.X"
   members:
     - "BA.2.86*"
-  parent: "BA.2.X"
+  color: "#808000"
 
 HV.1.X:
   name: "HV.1.X"
