@@ -39,6 +39,7 @@ jobs:
           conda install --yes freyja pytest pyyaml
 
       - name: Test with pytest
+        shell: bash -l {0}
         run: |
           conda activate test
           pytest
