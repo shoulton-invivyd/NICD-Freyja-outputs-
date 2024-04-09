@@ -1,0 +1,46 @@
+# This workflow will install pytest, and test validity of data in repo.
+
+name: Data integration
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup for conda
+        uses: conda-incubator/setup-miniconda@v2
+        with:        
+          auto-update-conda: true
+          channels: bioconda,conda-forge
+          channel-priority: true
+          python-version: 3.7
+          activate-environment: test
+      
+      - name: Install
+        shell: bash -l {0}
+        run: |
+          conda activate test
+          conda install -n base conda-libmamba-solver
+          conda config --set solver libmamba
+          conda config --add channels bioconda
+          conda config --add channels conda-forge  
+          conda install --yes freyja pytest pyyaml
+
+      - name: Test with pytest
+        run: |
+          conda activate test
+          pytest
+
+
