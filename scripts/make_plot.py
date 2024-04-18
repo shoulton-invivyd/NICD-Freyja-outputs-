@@ -83,6 +83,8 @@ for j, sampLabel in enumerate(agg_df.index):
                 linDictMod["Other"] = linDictMod.pop(rInd)
     processed_linDictMod.append(linDictMod)
 agg_df.loc[:, 'linDict'] = processed_linDictMod
+
+
 # move everything else to "Other"
 # agg_df.index = [adi.replace('_','-') for adi in agg_df.index]
 

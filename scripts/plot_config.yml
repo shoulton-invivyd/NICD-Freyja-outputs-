@@ -114,8 +114,8 @@ BA.2.X:
 #     - "BA.1.1*"
 #   parent: "BA.1"
 
-BA.1:
-  name: "BA.1"
+BA.1.X:
+  name: "BA.1.X"
   members:
     - "BA.1*"
   color: "#377eb8"
