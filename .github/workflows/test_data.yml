@@ -46,8 +46,8 @@ jobs:
         run: |
             eval `ssh-agent -s`
             ssh-add - <<< '${{ secrets.DASHBOARD_PRIVATE_KEY }}'
-            git config --local user.name "$GITHUB_ACTOR"
-            git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
+            git config --local user.name joshuailevy
+            git config --local user.email joshua.levy16@gmail.com
             git clone git@github.com:NICD-Wastewater-Genomics/Wastewater-Dashboard.git
             cp scripts/NICD_daily_smoothed.csv Wastewater-Dashboard/Dashboard/data/
             cp scripts/NICD_monthly.csv Wastewater-Dashboard/Dashboard/data/
@@ -57,9 +57,4 @@ jobs:
             git add --all
             git commit -m "automated core data update"
             git push origin main --force
-          #   git add ../figures/
-          #   git commit -m "updated figures"
-          #   git push origin main
-          # else
-          #   echo "no new samples, nothing to do"
-          # fi
+
