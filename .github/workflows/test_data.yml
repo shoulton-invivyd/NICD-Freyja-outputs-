@@ -49,6 +49,14 @@ jobs:
             git config --local user.name "$GITHUB_ACTOR"
             git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
             git clone git@github.com:NICD-Wastewater-Genomics/Wastewater-Dashboard.git
+            cp scripts/NICD_daily_smoothed.csv Wastewater-Dashboard/Dashboard/data/
+            cp scripts/NICD_monthly.csv Wastewater-Dashboard/Dashboard/data/
+            cp scripts/color_map.json Wastewater-Dashboard/Dashboard/data/
+            cp scripts/merged_data.tsv Wastewater-Dashboard/Dashboard/data/
+            cd Wastewater-Dashboard
+            git add --all
+            git commit -m "automated core data update"
+            git push origin main --force
           #   git add ../figures/
           #   git commit -m "updated figures"
           #   git push origin main
