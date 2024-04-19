@@ -58,10 +58,10 @@ jobs:
         id: verify_diff
         run: |
           git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
+          git add --all
     
       - name: Push
         if: steps.verify_diff.outputs.changed == 'true'
         run: |
-            git add --all
             git commit -m "automated core data update"
             git push origin main --force
