@@ -48,7 +48,7 @@ jobs:
             ssh-add - <<< '${{ secrets.DASHBOARD_PRIVATE_KEY }}'
             git config --local user.name "$GITHUB_ACTOR"
             git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
-            git clone https://github.com/NICD-Wastewater-Genomics/Wastewater-Dashboard.git
+            git clone git@github.com:NICD-Wastewater-Genomics/Wastewater-Dashboard.git
           #   git add ../figures/
           #   git commit -m "updated figures"
           #   git push origin main
