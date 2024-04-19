@@ -40,8 +40,7 @@ jobs:
           conda activate test
           pytest
 
-
-      - name: Push to dashboard
+      - name: Clone 
         shell: bash -l {0}
         run: |
             eval `ssh-agent -s`
@@ -54,7 +53,15 @@ jobs:
             cp scripts/color_map.json Wastewater-Dashboard/Dashboard/data/
             cp scripts/merged_data.tsv Wastewater-Dashboard/Dashboard/data/
             cd Wastewater-Dashboard
+
+      - name: Check if there are any changes
+        id: verify_diff
+        run: |
+          git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
+    
+      - name: Push
+        if: steps.verify_diff.outputs.changed == 'true'
+        run: |
             git add --all
             git commit -m "automated core data update"
             git push origin main --force
-
