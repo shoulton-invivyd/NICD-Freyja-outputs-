@@ -44,7 +44,7 @@ jobs:
       - name: Push to dashboard
         shell: bash -l {0}
         run: |
-            eval 'ssh-agent -s'
+            eval `ssh-agent -s`
             ssh-add - <<< '${{ secrets.DASHBOARD_PRIVATE_KEY }}'
             git clone https://github.com/NICD-Wastewater-Genomics/Wastewater-Dashboard.git
           #   git config --local user.name "$GITHUB_ACTOR"
