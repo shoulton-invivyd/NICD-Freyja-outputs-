@@ -111,6 +111,8 @@ merged_df = times_df.merge(agg_df,left_index=True,right_index=True)
 merged_df['Lineages']= merged_df['linDict'].apply(lambda x: ' '.join(x.keys()))
 merged_df['Abundances']= merged_df['linDict'].apply(lambda x: list(x.values()))
 merged_df = merged_df.drop(columns=['linDict'])
+keepColumns = [col for col in merged_df.columns if 'Unnamed' not in col]
+merged_df = merged_df[keepColumns]
 merged_df.to_csv('merged_data.tsv',sep='\t')
 
 h0 = [agi for agi in agg_df.index if agi in times_df.index]
