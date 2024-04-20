@@ -64,4 +64,4 @@ jobs:
         if: steps.verify_diff.outputs.changed == 'true'
         run: |
             git commit -m "automated core data update"
-            git push origin main --force
+            git push
