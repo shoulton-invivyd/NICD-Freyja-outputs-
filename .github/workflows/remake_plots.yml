@@ -1,0 +1,54 @@
+# This workflow will install pytest, and test validity of data in repo.
+
+name: Data integration
+
+on:
+  push:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup for conda
+        uses: conda-incubator/setup-miniconda@v2
+        with:        
+          auto-update-conda: true
+          channels: bioconda,conda-forge
+          channel-priority: true
+          python-version: 3.7
+          activate-environment: test
+      
+      - name: Install
+        shell: bash -l {0}
+        run: |
+          conda activate test
+          conda install -n base conda-libmamba-solver
+          conda config --set solver libmamba
+          conda config --add channels bioconda
+          conda config --add channels conda-forge  
+          conda install --yes freyja pytest pyyaml
+
+      - name: Rerun plotting
+        shell: bash -l {0}
+        run: |
+          if [[($(git status agg_demixed.tsv --porcelain | wc -c) -ne 0)]]; then
+            echo "new samples were added, remaking plots"
+            cd scripts/
+            python make_plot.py
+            python make_catchment_plots.py
+            git config --local user.name "$GITHUB_ACTOR"
+            git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
+            git add ../figures/
+            git commit -m "updated figures"
+            git push origin main
+          else
+            echo "no new samples, nothing to do"
+          fi

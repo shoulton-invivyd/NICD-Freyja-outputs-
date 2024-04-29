@@ -83,6 +83,8 @@ for j, sampLabel in enumerate(agg_df.index):
                 linDictMod["Other"] = linDictMod.pop(rInd)
     processed_linDictMod.append(linDictMod)
 agg_df.loc[:, 'linDict'] = processed_linDictMod
+
+
 # move everything else to "Other"
 # agg_df.index = [adi.replace('_','-') for adi in agg_df.index]
 
@@ -109,6 +111,8 @@ merged_df = times_df.merge(agg_df,left_index=True,right_index=True)
 merged_df['Lineages']= merged_df['linDict'].apply(lambda x: ' '.join(x.keys()))
 merged_df['Abundances']= merged_df['linDict'].apply(lambda x: list(x.values()))
 merged_df = merged_df.drop(columns=['linDict'])
+keepColumns = [col for col in merged_df.columns if 'Unnamed' not in col]
+merged_df = merged_df[keepColumns]
 merged_df.to_csv('merged_data.tsv',sep='\t')
 
 h0 = [agi for agi in agg_df.index if agi in times_df.index]
@@ -154,12 +158,12 @@ for i, sampLabel in enumerate(agg_df.index):
 # fill nans, group data by the appropriate interval
 df_abundances = df_abundances.fillna(0).T
 df_abundances = df_abundances.loc[df_abundances.index>="2021-12-01"]
-
 df2 = pd.melt(df_abundances.reset_index(), id_vars='index')
 df2.columns = ['collection_date', 'lineage', 'abundance']
 df2.to_csv('aggregated_dated.csv')
 ### in case of round off error, we'll add the leftover bits to Other. 
-
+print("Error on samples from dates:",df_abundances[df_abundances.sum(axis=1)>1.01].index)
+df_abundances = df_abundances[df_abundances.sum(axis=1)<1.01]
 df_abundances['Other'] += 1.- df_abundances.sum(axis=1)
 ### now prepare the plot. 
 ordering = [v['name'] for v in plot_config.values()] + ['Recombinants','Other']
@@ -172,7 +176,6 @@ colorDict = {l:c for l,c in zip(ordering,colors0)}
 with open('color_map.json', 'w') as f0:
     json.dump(colorDict, f0)
 colors0 = colors0[::-1]
-
 
 df = df_abundances[ordering[::-1]]
 ### group by month. 
@@ -229,10 +232,10 @@ plt.savefig('../figures/NICD_stackplot_weekly.pdf')
 from epiweeks import Week
 
 ### average across days, rolling 
-df_ = df.groupby(pd.Grouper(freq='D')).mean()
 windowSize=28
-df_ = df_.rolling(windowSize, center=True,min_periods=0).mean()
-
+df_ = df.groupby(pd.Grouper(freq='D')).sum()
+df_ = df_.rolling(windowSize, center=True,min_periods=0).sum()
+df_ = df_.div(df_.sum(axis=1),axis=0)
 df_.to_csv('NICD_daily_smoothed.csv')
 
 fig,ax = plt.subplots(figsize=(10.5,5))

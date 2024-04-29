@@ -110,7 +110,6 @@ merged_df = times_df.merge(agg_df,left_index=True,right_index=True)
 merged_df['Lineages']= merged_df['linDict'].apply(lambda x: ' '.join(x.keys()))
 merged_df['Abundances']= merged_df['linDict'].apply(lambda x: list(x.values()))
 merged_df = merged_df.drop(columns=['linDict'])
-merged_df.to_csv('merged_data.tsv',sep='\t')
 
 h0 = [agi for agi in agg_df.index if agi in times_df.index]
 
@@ -187,7 +186,6 @@ for site in allSites.keys():
     df = df_abundances[ordering[::-1]]
     ### group by month. 
     df_ = df.groupby(pd.Grouper(freq='MS')).mean()
-    df_.to_csv('NICD_monthly.csv')
     fig,ax = plt.subplots(figsize=(10.5,5))
 
     for i in range(0, df_.shape[1]):
