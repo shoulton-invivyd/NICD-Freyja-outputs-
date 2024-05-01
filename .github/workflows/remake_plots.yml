@@ -6,9 +6,6 @@ on:
   push:
     branches: [ "main" ]
 
-permissions:
-  contents: read
-
 jobs:
   build:
 
@@ -39,7 +36,7 @@ jobs:
       - name: Rerun plotting
         shell: bash -l {0}
         run: |
-          if [[($(git status agg_demixed.tsv --porcelain | wc -c) -ne 0)]]; then
+          if [[($(git status --porcelain | grep "^[^??]" | wc -c) -ne 0)]]; then
             echo "new samples were added, remaking plots"
             cd scripts/
             python make_plot.py

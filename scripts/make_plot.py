@@ -97,6 +97,7 @@ times_df = pd.read_csv('../sample_metadata.csv', skipinitialspace=True).dropna()
 times_df['Sequence_ID'] = times_df['Sequence_ID'].apply(lambda x:x.replace('_','-').replace('ENV-','').split('.')[0])
 
 times_df['LabNumber'] = times_df['LabNumber'].apply(lambda x:x.replace('ENV-',''))
+times_df = times_df.drop_duplicates()
 dupMeta = times_df.loc[times_df['LabNumber'].duplicated(keep='first'),'LabNumber'].to_list()
 if len(dupMeta)>0:
     print('lab numbers are duplicated.')
@@ -162,8 +163,9 @@ df2 = pd.melt(df_abundances.reset_index(), id_vars='index')
 df2.columns = ['collection_date', 'lineage', 'abundance']
 df2.to_csv('aggregated_dated.csv')
 ### in case of round off error, we'll add the leftover bits to Other. 
-print("Error on samples from dates:",df_abundances[df_abundances.sum(axis=1)>1.01].index)
-df_abundances = df_abundances[df_abundances.sum(axis=1)<1.01]
+if df_abundances[df_abundances.sum(axis=1)>1.01].shape[0]>0:
+    print("Error on samples from dates:",df_abundances[df_abundances.sum(axis=1)>1.01].index)
+    df_abundances = df_abundances[df_abundances.sum(axis=1)<1.01]
 df_abundances['Other'] += 1.- df_abundances.sum(axis=1)
 ### now prepare the plot. 
 ordering = [v['name'] for v in plot_config.values()] + ['Recombinants','Other']

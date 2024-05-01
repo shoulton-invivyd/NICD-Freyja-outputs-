@@ -96,6 +96,7 @@ times_df = pd.read_csv('../sample_metadata.csv', skipinitialspace=True).dropna()
 times_df['Sequence_ID'] = times_df['Sequence_ID'].apply(lambda x:x.replace('_','-').replace('ENV-','').split('.')[0])
 
 times_df['LabNumber'] = times_df['LabNumber'].apply(lambda x:x.replace('ENV-',''))
+times_df = times_df.drop_duplicates()
 dupMeta = times_df.loc[times_df['LabNumber'].duplicated(keep='first'),'LabNumber'].to_list()
 if len(dupMeta)>0:
     print('lab numbers are duplicated.')
