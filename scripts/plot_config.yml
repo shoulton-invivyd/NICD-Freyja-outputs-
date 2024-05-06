@@ -126,6 +126,12 @@ Delta:
     - "B.1.617.2*"
   color: "#3b3c3d"
 
+# B.1.X:
+#   name: "B.1.X"
+#   members:
+#     - "B.1*"
+#   color: "darkgrey"
+
   
 # Recombinants:
 #   name: "Other recombinants"
