@@ -47,7 +47,7 @@ jobs:
             echo "new samples were added, remaking plots"
             git add ../figures/
             git commit -m "updated figures"
-            git push origin main
+            git push origin $(github.head_ref)
           else
             echo "no new samples, nothing to do"
           fi
