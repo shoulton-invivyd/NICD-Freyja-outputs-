@@ -36,7 +36,7 @@ jobs:
       - name: Rerun plotting
         shell: bash -l {0}
         run: |
-          if [[($(git diff --name-only -r HEAD^1 HEAD | wc -c) -ne 0)]]; then
+          if [[($(git diff --name-only -r HEAD~1 HEAD | wc -c) -ne 0)]]; then
             echo "new samples were added, remaking plots"
             cd scripts/
             python make_plot.py
