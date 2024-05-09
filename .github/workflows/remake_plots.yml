@@ -5,8 +5,6 @@ name: Data integration
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
   build:
@@ -47,7 +45,7 @@ jobs:
             echo "new samples were added, remaking plots"
             git add ../figures/
             git commit -m "updated figures"
-            git push origin $(github.head_ref)
+            git push origin main
           else
             echo "no new samples, nothing to do"
           fi
