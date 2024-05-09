@@ -41,8 +41,8 @@ jobs:
           python make_catchment_plots.py
           if [[($(git status ../figures/ --porcelain | wc -c) -ne 0)]]; then
             echo "new samples were added, remaking plots"
-            git config --local user.name "$GITHUB_ACTOR"
-            git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
+            git config --global user.name "joshuailevy"
+            git config --global user.email "joshua.levy16@gmail.com"
             git add ../figures/
             git commit -m "updated figures"
             git push origin main
