@@ -5,6 +5,9 @@ name: Data integration
 on:
   push:
     branches: [ "main" ]
+  pull_request:
+      branches: ['auth_fix']
+
 
 jobs:
   build:
@@ -13,7 +16,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-
+        with:
+          ACCESS_TOKEN: ${{ secrets.NICD_TOKEN }}
       - name: Setup for conda
         uses: conda-incubator/setup-miniconda@v2
         with:        
