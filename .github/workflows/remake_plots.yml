@@ -13,7 +13,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-
+        with:
+          token: ${{ secrets.NICD_TOKEN }}
       - name: Setup for conda
         uses: conda-incubator/setup-miniconda@v2
         with:        
@@ -45,7 +46,7 @@ jobs:
             echo "new samples were added, remaking plots"
             git add ../figures/
             git commit -m "updated figures"
-            git push origin main
+            git push origin auth_fix
           else
             echo "no new samples, nothing to do"
           fi
