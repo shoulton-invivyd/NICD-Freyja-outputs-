@@ -6,7 +6,7 @@ on:
   push:
     branches: [ "main" ]
   pull_request:
-      branches: ['auth_fix']
+      branches: ['auth_fix','main']
 
 
 jobs:
@@ -49,7 +49,7 @@ jobs:
             echo "new samples were added, remaking plots"
             git add ../figures/
             git commit -m "updated figures"
-            git push origin main
+            git push origin auth_fix
           else
             echo "no new samples, nothing to do"
           fi
