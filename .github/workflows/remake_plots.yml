@@ -46,7 +46,7 @@ jobs:
             echo "new samples were added, remaking plots"
             git add ../figures/
             git commit -m "updated figures"
-            git push origin auth_fix
+            git push origin main
           else
             echo "no new samples, nothing to do"
           fi
