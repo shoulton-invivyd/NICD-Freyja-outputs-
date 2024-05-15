@@ -3,10 +3,10 @@
 name: Data integration
 
 on:
-  schedule:
-    - cron: '0 0 * * *'
-  # push:
-  #   branches: [ "main" ]
+  # schedule:
+  #   - cron: '0 0 * * *'
+  push:
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -47,7 +47,7 @@ jobs:
           git config --global user.email "joshua.levy16@gmail.com"
           if [[($(git status ../sample_metadata.csv --porcelain | wc -c) -ne 0)]]; then
             echo "new samples were added, remaking plots"
-            git add ../sample_metadata.csv
+            git add ../figures/
             git commit -m "updated figures"
             git push origin main
           else
