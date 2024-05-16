@@ -7,7 +7,6 @@ agg_df = pd.read_csv(agg_results, skipinitialspace=True, sep='\t', index_col=0)#
 times_df = pd.read_csv(meta, skipinitialspace=True).drop_duplicates().reset_index(drop=True)
 
 #check for empty entries
-
 print(agg_df[agg_df.duplicated(keep='first')].shape[0])
 
 if agg_df[agg_df.duplicated(keep='first')].shape[0] >0:
@@ -27,5 +26,6 @@ print(times_df[times_df['LabNumber'].duplicated(keep=False)].dropna())
 print(times_df[times_df['Sequence_ID'].duplicated(keep='first')].shape[0])
 print(times_df[times_df['LabNumber'].duplicated(keep=False)].dropna())
 # agg_df.to_csv(agg_results,sep='\t')
-times_df.to_csv(meta)
+times_df = times_df[[col for col in times_df.columns if 'Unnamed' not in col]]
+times_df.to_csv(meta,index=False)
 
