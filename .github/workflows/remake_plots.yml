@@ -48,6 +48,7 @@ jobs:
           if [[($(git status ../sample_metadata.csv --porcelain | wc -c) -ne 0)]]; then
             echo "new samples were added, remaking plots"
             git add ../figures/
+            git add .
             git commit -m "updated figures"
             git push origin main
           else
