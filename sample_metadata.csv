@@ -1126,9 +1126,18 @@ Gauteng,Johannesburg MM,6.0,2024-02-07,ENV-COV-24-0228,ENV-COV-24-0228,Motsoaled
 Gauteng,Ekurhuleni MM,6.0,2024-02-08,ENV-COV-24-0238,ENV-COV-24-0238,Olifantsfontein
 Gauteng,Ekurhuleni MM,6.0,2024-02-08,ENV-COV-24-0240,ENV-COV-24-0240,Tembisa Hospital Downstream
 Gauteng,Tshwane MM,6.0,2024-02-09,ENV-COV-24-0244,ENV-COV-24-0244,Daspoort Wastewater Treatment Works
+Gauteng,Tshwane MM,6.0,2024-02-09,ENV-COV-24-0244,ENV-COV-24-0244,Daspoort Wastewater Treatment Works
+Gauteng,Tshwane MM,6.0,2024-02-09,ENV-COV-24-0244,ENV-COV-24-0244,Daspoort Wastewater Treatment Works
+Gauteng,Tshwane MM,6.0,2024-02-09,ENV-COV-24-0244,ENV-COV-24-0244,Daspoort Wastewater Treatment Works
+Gauteng,Tshwane MM,6.0,2024-02-09,ENV-COV-24-0250,ENV-COV-24-0250,Groenkloof
+Gauteng,Tshwane MM,6.0,2024-02-09,ENV-COV-24-0250,ENV-COV-24-0250,Groenkloof
+Gauteng,Tshwane MM,6.0,2024-02-09,ENV-COV-24-0250,ENV-COV-24-0250,Groenkloof
 Gauteng,Tshwane MM,6.0,2024-02-09,ENV-COV-24-0250,ENV-COV-24-0250,Groenkloof
 Gauteng,Johannesburg MM,6.0,2024-02-09,ENV-COV-24-0251,ENV-COV-24-0251,Northern Wastewater Treatment Works (GP)
 Gauteng,Ekurhuleni MM,7.0,2024-02-12,ENV-COV-24-0254,ENV-COV-24-0254,Midstream
+Gauteng,Johannesburg MM,7.0,2024-02-12,ENV-COV-24-0261,ENV-COV-24-0261,Goudkoppies Wastewater Treatment Works
+Gauteng,Johannesburg MM,7.0,2024-02-12,ENV-COV-24-0261,ENV-COV-24-0261,Goudkoppies Wastewater Treatment Works
+Gauteng,Johannesburg MM,7.0,2024-02-12,ENV-COV-24-0261,ENV-COV-24-0261,Goudkoppies Wastewater Treatment Works
 Gauteng,Johannesburg MM,7.0,2024-02-12,ENV-COV-24-0261,ENV-COV-24-0261,Goudkoppies Wastewater Treatment Works
 KwaZulu-Natal,Ethekwini MM,7.0,2024-02-12,ENV-COV-24-0262,ENV-COV-24-0262,Northern Wastewater Treatment Works (KZN)
 Gauteng,Tshwane MM,7.0,2024-02-13,ENV-COV-24-0266,ENV-COV-24-0266,Daspoort Wastewater Treatment Works
@@ -1139,61 +1148,196 @@ North West,Ngaka Modiri Molema DM,6.0,2024-02-06,ENV-COV-24-0278,ENV-COV-24-0278
 Limpopo,Vhembe DM,7.0,2024-02-12,ENV-COV-24-0279,ENV-COV-24-0279,Nancefield
 Gauteng,Johannesburg MM,7.0,2024-02-14,ENV-COV-24-0285,ENV-COV-24-0285,Klipsruit Yard (Before tunnel)
 Gauteng,Johannesburg MM,7.0,2024-02-14,ENV-COV-24-0286,ENV-COV-24-0286,Klipspruit Veggies (After tunnel)
+Gauteng,Johannesburg MM,7.0,2024-02-14,ENV-COV-24-0286,ENV-COV-24-0286,Klipspruit Veggies (After tunnel)
+Gauteng,Johannesburg MM,7.0,2024-02-14,ENV-COV-24-0286,ENV-COV-24-0286,Klipspruit Veggies (After tunnel)
+Gauteng,Johannesburg MM,7.0,2024-02-14,ENV-COV-24-0286,ENV-COV-24-0286,Klipspruit Veggies (After tunnel)
 Gauteng,Johannesburg MM,7.0,2024-02-14,ENV-COV-24-0287,ENV-COV-24-0287,Bushkoppies Inlet
 Gauteng,Johannesburg MM,7.0,2024-02-14,ENV-COV-24-0288,ENV-COV-24-0288,Bushkoppies Final
+Gauteng,Johannesburg MM,7.0,2024-02-14,ENV-COV-24-0288,ENV-COV-24-0288,Bushkoppies Final
+Gauteng,Johannesburg MM,7.0,2024-02-14,ENV-COV-24-0288,ENV-COV-24-0288,Bushkoppies Final
+Gauteng,Johannesburg MM,7.0,2024-02-14,ENV-COV-24-0288,ENV-COV-24-0288,Bushkoppies Final
+Western Cape,Cape Town MM,7.0,2024-02-13,ENV-COV-24-0289,ENV-COV-24-0289,Borcherds Quarry Wastewater Treatment Works
+Western Cape,Cape Town MM,7.0,2024-02-13,ENV-COV-24-0289,ENV-COV-24-0289,Borcherds Quarry Wastewater Treatment Works
+Western Cape,Cape Town MM,7.0,2024-02-13,ENV-COV-24-0289,ENV-COV-24-0289,Borcherds Quarry Wastewater Treatment Works
 Western Cape,Cape Town MM,7.0,2024-02-13,ENV-COV-24-0289,ENV-COV-24-0289,Borcherds Quarry Wastewater Treatment Works
 Western Cape,Cape Town MM,7.0,2024-02-13,ENV-COV-24-0290,ENV-COV-24-0290,Zandvleit Wastewater Treatment Works
-Gauteng,Tshwane MM,7.0,2024-02-14,ENV-COV-24-0293,ENV-COV-24-0293,Rooiwal Wastewater Treatment Works
+Gauteng,Tshwane MM,7.0,2024-02-14,ENV-COV-24-0294,ENV-COV-24-0293,Rooiwal Wastewater Treatment Works
 Gauteng,Ekurhuleni MM,7.0,2024-02-15,ENV-COV-24-0294,ENV-COV-24-0294,Midstream
 Gauteng,Ekurhuleni MM,7.0,2024-02-15,ENV-COV-24-0296,ENV-COV-24-0296,Tembisa Mall
 Gauteng,Ekurhuleni MM,7.0,2024-02-15,ENV-COV-24-0300,ENV-COV-24-0300,Sasol Garage
 North West,Bojanala Platinum DM,7.0,2024-02-14,ENV-COV-24-0301,ENV-COV-24-0301,Rustenburg Wastewater Treatment Works
+North West,Bojanala Platinum DM,7.0,2024-02-14,ENV-COV-24-0301,ENV-COV-24-0301,Rustenburg Wastewater Treatment Works
+North West,Bojanala Platinum DM,7.0,2024-02-14,ENV-COV-24-0301,ENV-COV-24-0301,Rustenburg Wastewater Treatment Works
+North West,Bojanala Platinum DM,7.0,2024-02-14,ENV-COV-24-0301,ENV-COV-24-0301,Rustenburg Wastewater Treatment Works
 Eastern Cape,Nelson Mandela Bay MM,7.0,2024-02-13,ENV-COV-24-303,ENV-COV-24-0303,Brickfield Pre-treatment Works
+Eastern Cape,Nelson Mandela Bay MM,7.0,2024-02-13,ENV-COV-24-303,ENV-COV-24-0303,Brickfield Pre-treatment Works
+Eastern Cape,Nelson Mandela Bay MM,7.0,2024-02-13,ENV-COV-24-303,ENV-COV-24-0303,Brickfield Pre-treatment Works
+Eastern Cape,Nelson Mandela Bay MM,7.0,2024-02-13,ENV-COV-24-303,ENV-COV-24-0303,Brickfield Pre-treatment Works
+Gauteng,Tshwane MM,7.0,2024-02-16,ENV-COV-24-0304,ENV-COV-24-0304,Daspoort Wastewater Treatment Works
+Gauteng,Tshwane MM,7.0,2024-02-16,ENV-COV-24-0304,ENV-COV-24-0304,Daspoort Wastewater Treatment Works
+Gauteng,Tshwane MM,7.0,2024-02-16,ENV-COV-24-0304,ENV-COV-24-0304,Daspoort Wastewater Treatment Works
 Gauteng,Tshwane MM,7.0,2024-02-16,ENV-COV-24-0304,ENV-COV-24-0304,Daspoort Wastewater Treatment Works
 KwaZulu-Natal,Ethekwini MM,8.0,2024-02-19,ENV-COV-24-0320,ENV-COV-24-0320,Central Wastewater Treatment Works (KZN)
 Gauteng,Tshwane MM,8.0,2024-02-20,ENV-COV-24-0327,ENV-COV-24-0327,Groenkloof
 Gauteng,Johannesburg MM,8.0,2024-02-20,ENV-COV-24-0328,ENV-COV-24-0328,Northern Wastewater Treatment Works (GP)
 Free State,Mangaung MM,8.0,2024-02-20,ENV-COV-24-0331,ENV-COV-24-0331,Bloemspruit Wastewater Treatment Works
 Western Cape,Cape Town MM,8.0,2024-02-20,ENV-COV-24-0336,ENV-COV-24-0336,Borcherds Quarry Wastewater Treatment Works
+Western Cape,Cape Town MM,8.0,2024-02-20,ENV-COV-24-0336,ENV-COV-24-0336,Borcherds Quarry Wastewater Treatment Works
+Western Cape,Cape Town MM,8.0,2024-02-20,ENV-COV-24-0336,ENV-COV-24-0336,Borcherds Quarry Wastewater Treatment Works
+Western Cape,Cape Town MM,8.0,2024-02-20,ENV-COV-24-0336,ENV-COV-24-0336,Borcherds Quarry Wastewater Treatment Works
 Gauteng,Johannesburg MM,8.0,2024-02-21,ENV-COV-24-0342,ENV-COV-24-0342,Klipspruit Veggies (After tunnel)
 Gauteng,Ekurhuleni MM,8.0,2024-02-22,ENV-COV-24-0346,ENV-COV-24-0346,Midstream
 Gauteng,Tshwane MM,8.0,2024-02-23,ENV-COV-24-0359,ENV-COV-24-0359,Daspoort Wastewater Treatment Works
+Gauteng,Tshwane MM,8.0,2024-02-23,ENV-COV-24-0359,ENV-COV-24-0359,Daspoort Wastewater Treatment Works
+Gauteng,Tshwane MM,8.0,2024-02-23,ENV-COV-24-0359,ENV-COV-24-0359,Daspoort Wastewater Treatment Works
+Gauteng,Tshwane MM,8.0,2024-02-23,ENV-COV-24-0359,ENV-COV-24-0359,Daspoort Wastewater Treatment Works
+Gauteng,Tshwane MM,8.0,2024-02-23,ENV-COV-24-0364,ENV-COV-24-0364,Laudium
+Gauteng,Tshwane MM,8.0,2024-02-23,ENV-COV-24-0364,ENV-COV-24-0364,Laudium
+Gauteng,Tshwane MM,8.0,2024-02-23,ENV-COV-24-0364,ENV-COV-24-0364,Laudium
 Gauteng,Tshwane MM,8.0,2024-02-23,ENV-COV-24-0364,ENV-COV-24-0364,Laudium
 Gauteng,Ekurhuleni MM,9.0,2024-02-26,ENV-COV-24-0367,ENV-COV-24-0367,Olifantsfontein
+Gauteng,Ekurhuleni MM,9.0,2024-02-26,ENV-COV-24-0367,ENV-COV-24-0367,Olifantsfontein
+Gauteng,Ekurhuleni MM,9.0,2024-02-26,ENV-COV-24-0367,ENV-COV-24-0367,Olifantsfontein
+Gauteng,Ekurhuleni MM,9.0,2024-02-26,ENV-COV-24-0367,ENV-COV-24-0367,Olifantsfontein
+Gauteng,Tshwane MM,9.0,2024-02-27,ENV-COV-24-0373,ENV-COV-24-0373,SAPS Training College
+Gauteng,Tshwane MM,9.0,2024-02-27,ENV-COV-24-0373,ENV-COV-24-0373,SAPS Training College
+Gauteng,Tshwane MM,9.0,2024-02-27,ENV-COV-24-0373,ENV-COV-24-0373,SAPS Training College
 Gauteng,Tshwane MM,9.0,2024-02-27,ENV-COV-24-0373,ENV-COV-24-0373,SAPS Training College
 Gauteng,Tshwane MM,9.0,2024-02-27,ENV-COV-24-0377,ENV-COV-24-0377,Groenkloof
+Gauteng,Tshwane MM,9.0,2024-02-27,ENV-COV-24-0377,ENV-COV-24-0377,Groenkloof
+Gauteng,Tshwane MM,9.0,2024-02-27,ENV-COV-24-0377,ENV-COV-24-0377,Groenkloof
+Gauteng,Tshwane MM,9.0,2024-02-27,ENV-COV-24-0377,ENV-COV-24-0377,Groenkloof
+Gauteng,Johannesburg MM,9.0,2024-02-27,ENV-COV-24-0378,ENV-COV-24-0378,Northern Wastewater Treatment Works (GP)
+Gauteng,Johannesburg MM,9.0,2024-02-27,ENV-COV-24-0378,ENV-COV-24-0378,Northern Wastewater Treatment Works (GP)
+Gauteng,Johannesburg MM,9.0,2024-02-27,ENV-COV-24-0378,ENV-COV-24-0378,Northern Wastewater Treatment Works (GP)
 Gauteng,Johannesburg MM,9.0,2024-02-27,ENV-COV-24-0378,ENV-COV-24-0378,Northern Wastewater Treatment Works (GP)
 KwaZulu-Natal,Ethekwini MM,9.0,2024-02-26,ENV-COV-24-0380,ENV-COV-24-0380,Central Wastewater Treatment Works (KZN)
+KwaZulu-Natal,Ethekwini MM,9.0,2024-02-26,ENV-COV-24-0380,ENV-COV-24-0380,Central Wastewater Treatment Works (KZN)
+KwaZulu-Natal,Ethekwini MM,9.0,2024-02-26,ENV-COV-24-0380,ENV-COV-24-0380,Central Wastewater Treatment Works (KZN)
+KwaZulu-Natal,Ethekwini MM,9.0,2024-02-26,ENV-COV-24-0380,ENV-COV-24-0380,Central Wastewater Treatment Works (KZN)
+KwaZulu-Natal,Ethekwini MM,9.0,2024-02-26,ENV-COV-24-0381,ENV-COV-24-0381,Northern Wastewater Treatment Works (KZN)
+KwaZulu-Natal,Ethekwini MM,9.0,2024-02-26,ENV-COV-24-0381,ENV-COV-24-0381,Northern Wastewater Treatment Works (KZN)
+KwaZulu-Natal,Ethekwini MM,9.0,2024-02-26,ENV-COV-24-0381,ENV-COV-24-0381,Northern Wastewater Treatment Works (KZN)
 KwaZulu-Natal,Ethekwini MM,9.0,2024-02-26,ENV-COV-24-0381,ENV-COV-24-0381,Northern Wastewater Treatment Works (KZN)
 Gauteng,Johannesburg MM,9.0,2024-02-28,ENV-COV-24-0383,ENV-COV-24-0383,Motsoaledi
+Gauteng,Johannesburg MM,9.0,2024-02-28,ENV-COV-24-0383,ENV-COV-24-0383,Motsoaledi
+Gauteng,Johannesburg MM,9.0,2024-02-28,ENV-COV-24-0383,ENV-COV-24-0383,Motsoaledi
+Gauteng,Johannesburg MM,9.0,2024-02-28,ENV-COV-24-0383,ENV-COV-24-0383,Motsoaledi
+Gauteng,Johannesburg MM,9.0,2024-02-28,ENV-COV-24-0384,ENV-COV-24-0384,Klipsruit Yard (Before tunnel)
+Gauteng,Johannesburg MM,9.0,2024-02-28,ENV-COV-24-0384,ENV-COV-24-0384,Klipsruit Yard (Before tunnel)
+Gauteng,Johannesburg MM,9.0,2024-02-28,ENV-COV-24-0384,ENV-COV-24-0384,Klipsruit Yard (Before tunnel)
 Gauteng,Johannesburg MM,9.0,2024-02-28,ENV-COV-24-0384,ENV-COV-24-0384,Klipsruit Yard (Before tunnel)
 Gauteng,Johannesburg MM,9.0,2024-02-28,ENV-COV-24-0385,ENV-COV-24-0385,Klipspruit Veggies (After tunnel)
+Gauteng,Johannesburg MM,9.0,2024-02-28,ENV-COV-24-0385,ENV-COV-24-0385,Klipspruit Veggies (After tunnel)
+Gauteng,Johannesburg MM,9.0,2024-02-28,ENV-COV-24-0385,ENV-COV-24-0385,Klipspruit Veggies (After tunnel)
+Gauteng,Johannesburg MM,9.0,2024-02-28,ENV-COV-24-0385,ENV-COV-24-0385,Klipspruit Veggies (After tunnel)
+Gauteng,Johannesburg MM,9.0,2024-02-28,ENV-COV-24-0386,ENV-COV-24-0386,Bushkoppies Inlet
+Gauteng,Johannesburg MM,9.0,2024-02-28,ENV-COV-24-0386,ENV-COV-24-0386,Bushkoppies Inlet
+Gauteng,Johannesburg MM,9.0,2024-02-28,ENV-COV-24-0386,ENV-COV-24-0386,Bushkoppies Inlet
 Gauteng,Johannesburg MM,9.0,2024-02-28,ENV-COV-24-0386,ENV-COV-24-0386,Bushkoppies Inlet
 Gauteng,Johannesburg MM,9.0,2024-02-28,ENV-COV-24-0387,ENV-COV-24-0387,Bushkoppies Final
+Gauteng,Johannesburg MM,9.0,2024-02-28,ENV-COV-24-0387,ENV-COV-24-0387,Bushkoppies Final
+Gauteng,Johannesburg MM,9.0,2024-02-28,ENV-COV-24-0387,ENV-COV-24-0387,Bushkoppies Final
+Gauteng,Johannesburg MM,9.0,2024-02-28,ENV-COV-24-0387,ENV-COV-24-0387,Bushkoppies Final
+Free State,Mangaung MM,9.0,2024-02-27,ENV-COV-24-0389,ENV-COV-24-0389,Bloemspruit Wastewater Treatment Works
+Free State,Mangaung MM,9.0,2024-02-27,ENV-COV-24-0389,ENV-COV-24-0389,Bloemspruit Wastewater Treatment Works
+Free State,Mangaung MM,9.0,2024-02-27,ENV-COV-24-0389,ENV-COV-24-0389,Bloemspruit Wastewater Treatment Works
 Free State,Mangaung MM,9.0,2024-02-27,ENV-COV-24-0389,ENV-COV-24-0389,Bloemspruit Wastewater Treatment Works
 Western Cape,Cape Town MM,9.0,2024-02-27,ENV-COV-24-0395,ENV-COV-24-0395,Zandvleit Wastewater Treatment Works
+Western Cape,Cape Town MM,9.0,2024-02-27,ENV-COV-24-0395,ENV-COV-24-0395,Zandvleit Wastewater Treatment Works
+Western Cape,Cape Town MM,9.0,2024-02-27,ENV-COV-24-0395,ENV-COV-24-0395,Zandvleit Wastewater Treatment Works
+Western Cape,Cape Town MM,9.0,2024-02-27,ENV-COV-24-0395,ENV-COV-24-0395,Zandvleit Wastewater Treatment Works
+Gauteng,Ekurhuleni MM,9.0,2024-02-29,ENV-COV-24-0396,ENV-COV-24-0396,Olifantsfontein
+Gauteng,Ekurhuleni MM,9.0,2024-02-29,ENV-COV-24-0396,ENV-COV-24-0396,Olifantsfontein
+Gauteng,Ekurhuleni MM,9.0,2024-02-29,ENV-COV-24-0396,ENV-COV-24-0396,Olifantsfontein
 Gauteng,Ekurhuleni MM,9.0,2024-02-29,ENV-COV-24-0396,ENV-COV-24-0396,Olifantsfontein
 Gauteng,Ekurhuleni MM,9.0,2024-02-29,ENV-COV-24-0397,ENV-COV-24-0397,Olifantsfontein
+Gauteng,Ekurhuleni MM,9.0,2024-02-29,ENV-COV-24-0397,ENV-COV-24-0397,Olifantsfontein
+Gauteng,Ekurhuleni MM,9.0,2024-02-29,ENV-COV-24-0397,ENV-COV-24-0397,Olifantsfontein
+Gauteng,Ekurhuleni MM,9.0,2024-02-29,ENV-COV-24-0397,ENV-COV-24-0397,Olifantsfontein
+North West,Ngaka Modiri Molema DM,9.0,2024-02-27,ENV-COV-24-0403,ENV-COV-24-0403,Mmabatho Water Treatment Works
+North West,Ngaka Modiri Molema DM,9.0,2024-02-27,ENV-COV-24-0403,ENV-COV-24-0403,Mmabatho Water Treatment Works
+North West,Ngaka Modiri Molema DM,9.0,2024-02-27,ENV-COV-24-0403,ENV-COV-24-0403,Mmabatho Water Treatment Works
 North West,Ngaka Modiri Molema DM,9.0,2024-02-27,ENV-COV-24-0403,ENV-COV-24-0403,Mmabatho Water Treatment Works
 Limpopo,Vhembe DM,9.0,2024-02-26,ENV-COV-24-0405,ENV-COV-24-0405,Nancefield
+Limpopo,Vhembe DM,9.0,2024-02-26,ENV-COV-24-0405,ENV-COV-24-0405,Nancefield
+Limpopo,Vhembe DM,9.0,2024-02-26,ENV-COV-24-0405,ENV-COV-24-0405,Nancefield
+Limpopo,Vhembe DM,9.0,2024-02-26,ENV-COV-24-0405,ENV-COV-24-0405,Nancefield
+Limpopo,Vhembe DM,9.0,2024-02-26,ENV-COV-24-0406,ENV-COV-24-0406,Musina WWTW (in town)
+Limpopo,Vhembe DM,9.0,2024-02-26,ENV-COV-24-0406,ENV-COV-24-0406,Musina WWTW (in town)
+Limpopo,Vhembe DM,9.0,2024-02-26,ENV-COV-24-0406,ENV-COV-24-0406,Musina WWTW (in town)
 Limpopo,Vhembe DM,9.0,2024-02-26,ENV-COV-24-0406,ENV-COV-24-0406,Musina WWTW (in town)
 Gauteng,Tshwane MM,9.0,2024-03-01,ENV-COV-24-0410,ENV-COV-24-0410,Daspoort Wastewater Treatment Works
+Gauteng,Tshwane MM,9.0,2024-03-01,ENV-COV-24-0410,ENV-COV-24-0410,Daspoort Wastewater Treatment Works
+Gauteng,Tshwane MM,9.0,2024-03-01,ENV-COV-24-0410,ENV-COV-24-0410,Daspoort Wastewater Treatment Works
+Gauteng,Tshwane MM,9.0,2024-03-01,ENV-COV-24-0410,ENV-COV-24-0410,Daspoort Wastewater Treatment Works
+Gauteng,Tshwane MM,9.0,2024-03-01,ENV-COV-24-0415,ENV-COV-24-0415,Laudium
+Gauteng,Tshwane MM,9.0,2024-03-01,ENV-COV-24-0415,ENV-COV-24-0415,Laudium
+Gauteng,Tshwane MM,9.0,2024-03-01,ENV-COV-24-0415,ENV-COV-24-0415,Laudium
 Gauteng,Tshwane MM,9.0,2024-03-01,ENV-COV-24-0415,ENV-COV-24-0415,Laudium
 Gauteng,Ekurhuleni MM,10.0,2024-03-04,ENV-COV-03-0424,ENV-COV-24-0424,Namane Drive
+Gauteng,Ekurhuleni MM,10.0,2024-03-04,ENV-COV-03-0424,ENV-COV-24-0424,Namane Drive
+Gauteng,Ekurhuleni MM,10.0,2024-03-04,ENV-COV-03-0424,ENV-COV-24-0424,Namane Drive
+Gauteng,Ekurhuleni MM,10.0,2024-03-04,ENV-COV-03-0424,ENV-COV-24-0424,Namane Drive
+Gauteng,Johannesburg MM,10.0,2024-03-05,ENV-COV-24-0427,ENV-COV-24-0427,Klipsruit Yard (Before tunnel)
+Gauteng,Johannesburg MM,10.0,2024-03-05,ENV-COV-24-0427,ENV-COV-24-0427,Klipsruit Yard (Before tunnel)
+Gauteng,Johannesburg MM,10.0,2024-03-05,ENV-COV-24-0427,ENV-COV-24-0427,Klipsruit Yard (Before tunnel)
 Gauteng,Johannesburg MM,10.0,2024-03-05,ENV-COV-24-0427,ENV-COV-24-0427,Klipsruit Yard (Before tunnel)
 Gauteng,Johannesburg MM,10.0,2024-03-05,ENV-COV-24-0428,ENV-COV-24-0428,Klipspruit Veggies (After tunnel)
+Gauteng,Johannesburg MM,10.0,2024-03-05,ENV-COV-24-0428,ENV-COV-24-0428,Klipspruit Veggies (After tunnel)
+Gauteng,Johannesburg MM,10.0,2024-03-05,ENV-COV-24-0428,ENV-COV-24-0428,Klipspruit Veggies (After tunnel)
+Gauteng,Johannesburg MM,10.0,2024-03-05,ENV-COV-24-0428,ENV-COV-24-0428,Klipspruit Veggies (After tunnel)
+Gauteng,Johannesburg MM,10.0,2024-03-05,ENV-COV-24-0429,ENV-COV-24-0429,Bushkoppies Inlet
+Gauteng,Johannesburg MM,10.0,2024-03-05,ENV-COV-24-0429,ENV-COV-24-0429,Bushkoppies Inlet
+Gauteng,Johannesburg MM,10.0,2024-03-05,ENV-COV-24-0429,ENV-COV-24-0429,Bushkoppies Inlet
 Gauteng,Johannesburg MM,10.0,2024-03-05,ENV-COV-24-0429,ENV-COV-24-0429,Bushkoppies Inlet
 Gauteng,Johannesburg MM,10.0,2024-03-05,ENV-COV-24-0431,ENV-COV-24-0431,Goudkoppies Wastewater Treatment Works
+Gauteng,Johannesburg MM,10.0,2024-03-05,ENV-COV-24-0431,ENV-COV-24-0431,Goudkoppies Wastewater Treatment Works
+Gauteng,Johannesburg MM,10.0,2024-03-05,ENV-COV-24-0431,ENV-COV-24-0431,Goudkoppies Wastewater Treatment Works
+Gauteng,Johannesburg MM,10.0,2024-03-05,ENV-COV-24-0431,ENV-COV-24-0431,Goudkoppies Wastewater Treatment Works
+KwaZulu-Natal,Ethekwini MM,10.0,2024-03-04,ENV-COV-24-0433,ENV-COV-24-0433,Northern Wastewater Treatment Works (KZN)
+KwaZulu-Natal,Ethekwini MM,10.0,2024-03-04,ENV-COV-24-0433,ENV-COV-24-0433,Northern Wastewater Treatment Works (KZN)
+KwaZulu-Natal,Ethekwini MM,10.0,2024-03-04,ENV-COV-24-0433,ENV-COV-24-0433,Northern Wastewater Treatment Works (KZN)
 KwaZulu-Natal,Ethekwini MM,10.0,2024-03-04,ENV-COV-24-0433,ENV-COV-24-0433,Northern Wastewater Treatment Works (KZN)
 KwaZulu-Natal,Ethekwini MM,10.0,2024-03-04,ENV-COV-24-0434,ENV-COV-24-0434,Central Wastewater Treatment Works (KZN)
+KwaZulu-Natal,Ethekwini MM,10.0,2024-03-04,ENV-COV-24-0434,ENV-COV-24-0434,Central Wastewater Treatment Works (KZN)
+KwaZulu-Natal,Ethekwini MM,10.0,2024-03-04,ENV-COV-24-0434,ENV-COV-24-0434,Central Wastewater Treatment Works (KZN)
+KwaZulu-Natal,Ethekwini MM,10.0,2024-03-04,ENV-COV-24-0434,ENV-COV-24-0434,Central Wastewater Treatment Works (KZN)
+Gauteng,Tshwane MM,10.0,2024-03-06,ENV-COV-24-0437,ENV-COV-24-0437,Daspoort Wastewater Treatment Works
+Gauteng,Tshwane MM,10.0,2024-03-06,ENV-COV-24-0437,ENV-COV-24-0437,Daspoort Wastewater Treatment Works
+Gauteng,Tshwane MM,10.0,2024-03-06,ENV-COV-24-0437,ENV-COV-24-0437,Daspoort Wastewater Treatment Works
 Gauteng,Tshwane MM,10.0,2024-03-06,ENV-COV-24-0437,ENV-COV-24-0437,Daspoort Wastewater Treatment Works
 Gauteng,Tshwane MM,10.0,2024-03-06,ENV-COV-24-0441,ENV-COV-24-0441,Vergenoeg
+Gauteng,Tshwane MM,10.0,2024-03-06,ENV-COV-24-0441,ENV-COV-24-0441,Vergenoeg
+Gauteng,Tshwane MM,10.0,2024-03-06,ENV-COV-24-0441,ENV-COV-24-0441,Vergenoeg
+Gauteng,Tshwane MM,10.0,2024-03-06,ENV-COV-24-0441,ENV-COV-24-0441,Vergenoeg
+Gauteng,Johannesburg MM,10.0,2024-03-06,ENV-COV-254-0444,ENV-COV-24-0444,Northern Wastewater Treatment Works (GP)
+Gauteng,Johannesburg MM,10.0,2024-03-06,ENV-COV-254-0444,ENV-COV-24-0444,Northern Wastewater Treatment Works (GP)
+Gauteng,Johannesburg MM,10.0,2024-03-06,ENV-COV-254-0444,ENV-COV-24-0444,Northern Wastewater Treatment Works (GP)
 Gauteng,Johannesburg MM,10.0,2024-03-06,ENV-COV-254-0444,ENV-COV-24-0444,Northern Wastewater Treatment Works (GP)
 Western Cape,Cape Town MM,10.0,2024-03-05,ENV-COV-24-0450,ENV-COV-24-0450,Zandvleit Wastewater Treatment Works
+Western Cape,Cape Town MM,10.0,2024-03-05,ENV-COV-24-0450,ENV-COV-24-0450,Zandvleit Wastewater Treatment Works
+Western Cape,Cape Town MM,10.0,2024-03-05,ENV-COV-24-0450,ENV-COV-24-0450,Zandvleit Wastewater Treatment Works
+Western Cape,Cape Town MM,10.0,2024-03-05,ENV-COV-24-0450,ENV-COV-24-0450,Zandvleit Wastewater Treatment Works
+Free State,Mangaung MM,10.0,2024-03-05,ENV-COV-24-0453,ENV-COV-24-0453,Sterkwater Wastewater Treatment Works
+Free State,Mangaung MM,10.0,2024-03-05,ENV-COV-24-0453,ENV-COV-24-0453,Sterkwater Wastewater Treatment Works
+Free State,Mangaung MM,10.0,2024-03-05,ENV-COV-24-0453,ENV-COV-24-0453,Sterkwater Wastewater Treatment Works
 Free State,Mangaung MM,10.0,2024-03-05,ENV-COV-24-0453,ENV-COV-24-0453,Sterkwater Wastewater Treatment Works
 Gauteng,Ekurhuleni MM,10.0,2024-03-07,ENV-COV-24-0454,ENV-COV-24-0454,Midstream
+Gauteng,Ekurhuleni MM,10.0,2024-03-07,ENV-COV-24-0454,ENV-COV-24-0454,Midstream
+Gauteng,Ekurhuleni MM,10.0,2024-03-07,ENV-COV-24-0454,ENV-COV-24-0454,Midstream
+Gauteng,Ekurhuleni MM,10.0,2024-03-07,ENV-COV-24-0454,ENV-COV-24-0454,Midstream
+Gauteng,Ekurhuleni MM,10.0,2024-03-07,ENV-COV-24-0458,ENV-COV-24-0457,Tembisa Hospital Downstream
+Gauteng,Ekurhuleni MM,10.0,2024-03-07,ENV-COV-24-0458,ENV-COV-24-0457,Tembisa Hospital Downstream
+Gauteng,Ekurhuleni MM,10.0,2024-03-07,ENV-COV-24-0458,ENV-COV-24-0457,Tembisa Hospital Downstream
 Gauteng,Ekurhuleni MM,10.0,2024-03-07,ENV-COV-24-0458,ENV-COV-24-0457,Tembisa Hospital Downstream
 Gauteng,Tshwane MM,10.0,2024-03-06,ENV-COV-24-0461,ENV-COV-24-0461,Rooiwal Wastewater Treatment Works
+Gauteng,Tshwane MM,10.0,2024-03-06,ENV-COV-24-0461,ENV-COV-24-0461,Rooiwal Wastewater Treatment Works
+Gauteng,Tshwane MM,10.0,2024-03-06,ENV-COV-24-0461,ENV-COV-24-0461,Rooiwal Wastewater Treatment Works
+Gauteng,Tshwane MM,10.0,2024-03-06,ENV-COV-24-0461,ENV-COV-24-0461,Rooiwal Wastewater Treatment Works
+North West,Bojanala Platinum DM,10.0,2024-03-06,ENV-COV-24-0462,ENV-COV-24-0462,Boitekong
+North West,Bojanala Platinum DM,10.0,2024-03-06,ENV-COV-24-0462,ENV-COV-24-0462,Boitekong
+North West,Bojanala Platinum DM,10.0,2024-03-06,ENV-COV-24-0462,ENV-COV-24-0462,Boitekong
 North West,Bojanala Platinum DM,10.0,2024-03-06,ENV-COV-24-0462,ENV-COV-24-0462,Boitekong
 Gauteng,Tshwane MM,10.0,2024-03-08,ENV-COV-24-0464,ENV-COV-24-0464,Daspoort Wastewater Treatment Works
 Gauteng,Ekurhuleni MM,11.0,2024-03-12,ENV-COV-24-0481,ENV-COV-24-0481,Hartebeesfontein Waterworks
@@ -1250,104 +1394,251 @@ Gauteng,Ekurhuleni MM,14.0,2024-04-04,ENV-COV-24-0651,ENV-COV-24-0651,Olifantsfo
 Gauteng,Ekurhuleni MM,14.0,2024-04-04,ENV-COV-24-0653,ENV-COV-24-0653,Tembisa Hospital Downstream
 Gauteng,Ekurhuleni MM,14.0,2024-04-04,ENV-COV-24-0656,ENV-COV-24-0656,Sasol Garage
 Gauteng,Tshwane MM,14.0,2024-04-05,ENV-COV-24-0657,ENV-COV-24-0657,Daspoort Wastewater Treatment Works
+Gauteng,Tshwane MM,14.0,2024-04-05,ENV-COV-24-0657,ENV-COV-24-0657,Daspoort Wastewater Treatment Works
 ,,,,,ENV-COV-24-0658,
 ,,,,,ENV-COV-24-0659,
 Gauteng,Ekurhuleni MM,15.0,2024-04-08,ENV-COV-24-0667,ENV-COV-24-0667,Midstream
+Gauteng,Ekurhuleni MM,15.0,2024-04-08,ENV-COV-24-0667,ENV-COV-24-0667,Midstream
+Gauteng,Ekurhuleni MM,15.0,2024-04-08,ENV-COV-24-0668,ENV-COV-24-0668,Olifantsfontein
 Gauteng,Ekurhuleni MM,15.0,2024-04-08,ENV-COV-24-0668,ENV-COV-24-0668,Olifantsfontein
 Gauteng,Tshwane MM,15.0,2024-04-09,ENV-COV-24-0674,ENV-COV-24-0674,Daspoort Wastewater Treatment Works
+Gauteng,Tshwane MM,15.0,2024-04-09,ENV-COV-24-0674,ENV-COV-24-0674,Daspoort Wastewater Treatment Works
+Gauteng,Johannesburg MM,15.0,2024-04-09,ENV-COV-24-0679,ENV-COV-24-0679,Northern Wastewater Treatment Works (GP)
 Gauteng,Johannesburg MM,15.0,2024-04-09,ENV-COV-24-0679,ENV-COV-24-0679,Northern Wastewater Treatment Works (GP)
 KwaZulu-Natal,Ethekwini MM,15.0,2024-04-08,ENV-COV-24-0680,ENV-COV-24-0680,Northern Wastewater Treatment Works (KZN)
+KwaZulu-Natal,Ethekwini MM,15.0,2024-04-08,ENV-COV-24-0680,ENV-COV-24-0680,Northern Wastewater Treatment Works (KZN)
+KwaZulu-Natal,Ethekwini MM,15.0,2024-04-08,ENV-COV-24-0681,ENV-COV-24-0681,Central Wastewater Treatment Works (KZN)
 KwaZulu-Natal,Ethekwini MM,15.0,2024-04-08,ENV-COV-24-0681,ENV-COV-24-0681,Central Wastewater Treatment Works (KZN)
 Gauteng,Johannesburg MM,15.0,2024-04-10,ENV-COV-24-0686,ENV-COV-24-0686,Bushkoppies Inlet
+Gauteng,Johannesburg MM,15.0,2024-04-10,ENV-COV-24-0686,ENV-COV-24-0686,Bushkoppies Inlet
+Gauteng,Johannesburg MM,15.0,2024-04-10,ENV-COV-24-0687,ENV-COV-24-0687,Bushkoppies Final
 Gauteng,Johannesburg MM,15.0,2024-04-10,ENV-COV-24-0687,ENV-COV-24-0687,Bushkoppies Final
 Gauteng,Johannesburg MM,15.0,2024-04-10,ENV-COV-24-0688,ENV-COV-24-0688,Goudkoppies Wastewater Treatment Works
+Gauteng,Johannesburg MM,15.0,2024-04-10,ENV-COV-24-0688,ENV-COV-24-0688,Goudkoppies Wastewater Treatment Works
+Gauteng,Ekurhuleni MM,15.0,2024-04-09,ENV-COV-24-0689,ENV-COV-24-0689,ERWAT Vlakplaat Wastewater Treatment Works
 Gauteng,Ekurhuleni MM,15.0,2024-04-09,ENV-COV-24-0689,ENV-COV-24-0689,ERWAT Vlakplaat Wastewater Treatment Works
 Mpumalanga,Ehlanzeni DM,15.0,2024-04-08,ENV-COV-24-0690,ENV-COV-24-0690,Komatipoort Sewage plant
+Mpumalanga,Ehlanzeni DM,15.0,2024-04-08,ENV-COV-24-0690,ENV-COV-24-0690,Komatipoort Sewage plant
+Free State,Mangaung MM,15.0,2024-04-09,ENV-COV-24-0692,ENV-COV-24-0692,Bloemspruit Wastewater Treatment Works
 Free State,Mangaung MM,15.0,2024-04-09,ENV-COV-24-0692,ENV-COV-24-0692,Bloemspruit Wastewater Treatment Works
 Western Cape,Cape Town MM,15.0,2024-04-09,ENV-COV-24-0694,ENV-COV-24-0694,Zandvleit Wastewater Treatment Works
+Western Cape,Cape Town MM,15.0,2024-04-09,ENV-COV-24-0694,ENV-COV-24-0694,Zandvleit Wastewater Treatment Works
+Western Cape,Cape Town MM,15.0,2024-04-09,ENV-COV-24-0695,ENV-COV-24-0695,Borcherds Quarry Wastewater Treatment Works
 Western Cape,Cape Town MM,15.0,2024-04-09,ENV-COV-24-0695,ENV-COV-24-0695,Borcherds Quarry Wastewater Treatment Works
 Gauteng,Ekurhuleni MM,15.0,2024-04-11,ENV-COV-24-0699,ENV-COV-24-0699,Midstream
+Gauteng,Ekurhuleni MM,15.0,2024-04-11,ENV-COV-24-0699,ENV-COV-24-0699,Midstream
+,,,,,ENV-COV-24-0700,
 ,,,,,ENV-COV-24-0700,
 Gauteng,Ekurhuleni MM,15.0,2024-04-11,ENV-COV-24-0701,ENV-COV-24-0701,Tembisa Mall
+Gauteng,Ekurhuleni MM,15.0,2024-04-11,ENV-COV-24-0701,ENV-COV-24-0701,Tembisa Mall
+Gauteng,Tshwane MM,15.0,2024-04-12,ENV-COV-24-0702,ENV-COV-24-0702,Daspoort Wastewater Treatment Works
 Gauteng,Tshwane MM,15.0,2024-04-12,ENV-COV-24-0702,ENV-COV-24-0702,Daspoort Wastewater Treatment Works
 Gauteng,Ekurhuleni MM,15.0,2024-04-11,ENV-COV-24-0703,ENV-COV-24-0703,Sasol Garage
+Gauteng,Ekurhuleni MM,15.0,2024-04-11,ENV-COV-24-0703,ENV-COV-24-0703,Sasol Garage
+Gauteng,Ekurhuleni MM,15.0,2024-04-11,ENV-COV-24-0704,ENV-COV-24-0704,Tembisa Hospital East and West
 Gauteng,Ekurhuleni MM,15.0,2024-04-11,ENV-COV-24-0704,ENV-COV-24-0704,Tembisa Hospital East and West
 Gauteng,Ekurhuleni MM,15.0,2024-04-11,ENV-COV-24-0706,ENV-COV-24-0706,Namane Drive
+Gauteng,Ekurhuleni MM,15.0,2024-04-11,ENV-COV-24-0706,ENV-COV-24-0706,Namane Drive
+North West,Ngaka Modiri Molema DM,15.0,2024-04-09,ENV-COV-24-0708,ENV-COV-24-0708,Mmabatho Water Treatment Works
 North West,Ngaka Modiri Molema DM,15.0,2024-04-09,ENV-COV-24-0708,ENV-COV-24-0708,Mmabatho Water Treatment Works
 Gauteng,Tshwane MM,15.0,2024-04-12,ENV-COV-24-0709,ENV-COV-24-0709,SAPS Training College
+Gauteng,Tshwane MM,15.0,2024-04-12,ENV-COV-24-0709,ENV-COV-24-0709,SAPS Training College
+Eastern Cape,Buffalo City MM,15.0,2024-04-11,ENV-COV-24-0715,ENV-COV-24-0715,Mdantsane Wastewater Treatment Works
 Eastern Cape,Buffalo City MM,15.0,2024-04-11,ENV-COV-24-0715,ENV-COV-24-0715,Mdantsane Wastewater Treatment Works
 KwaZulu-Natal,Umkhanyakude DM,14.0,2024-04-02,ENV-COV-24-0718,ENV-COV-24-0718,Jozini Wastewater Treatment Plant
+KwaZulu-Natal,Umkhanyakude DM,14.0,2024-04-02,ENV-COV-24-0718,ENV-COV-24-0718,Jozini Wastewater Treatment Plant
+Gauteng,Ekurhuleni MM,16.0,2024-04-15,ENV-COV-24-0719,ENV-COV-24-0719,Midstream
 Gauteng,Ekurhuleni MM,16.0,2024-04-15,ENV-COV-24-0719,ENV-COV-24-0719,Midstream
 Gauteng,Ekurhuleni MM,16.0,2024-04-15,ENV-COV-24-0720,ENV-COV-24-0720,Olifantsfontein
+Gauteng,Ekurhuleni MM,16.0,2024-04-15,ENV-COV-24-0720,ENV-COV-24-0720,Olifantsfontein
+Gauteng,Ekurhuleni MM,16.0,2024-04-15,ENV-COV-24-0724,ENV-COV-24-0724,Namane Drive
 Gauteng,Ekurhuleni MM,16.0,2024-04-15,ENV-COV-24-0724,ENV-COV-24-0724,Namane Drive
 Gauteng,Ekurhuleni MM,16.0,2024-04-15,ENV-COV-24-0725,ENV-COV-24-0725,Sasol Garage
+Gauteng,Ekurhuleni MM,16.0,2024-04-15,ENV-COV-24-0725,ENV-COV-24-0725,Sasol Garage
+Gauteng,Tshwane MM,16.0,2024-04-16,ENV-COV-24-0726,ENV-COV-24-0726,Daspoort Wastewater Treatment Works
 Gauteng,Tshwane MM,16.0,2024-04-16,ENV-COV-24-0726,ENV-COV-24-0726,Daspoort Wastewater Treatment Works
 Gauteng,Tshwane MM,16.0,2024-04-16,ENV-COV-24-0731,ENV-COV-24-0731,Groenkloof
+Gauteng,Tshwane MM,16.0,2024-04-16,ENV-COV-24-0731,ENV-COV-24-0731,Groenkloof
+Gauteng,Ekurhuleni MM,16.0,2024-04-16,ENV-COV-24-0732,ENV-COV-24-0732,Northern Wastewater Treatment Works (GP)
 Gauteng,Ekurhuleni MM,16.0,2024-04-16,ENV-COV-24-0732,ENV-COV-24-0732,Northern Wastewater Treatment Works (GP)
 KwaZulu-Natal,Ethekwini MM,16.0,2024-04-15,ENV-COV-24-0733,ENV-COV-24-0733,Central Wastewater Treatment Works (KZN)
+KwaZulu-Natal,Ethekwini MM,16.0,2024-04-15,ENV-COV-24-0733,ENV-COV-24-0733,Central Wastewater Treatment Works (KZN)
+KwaZulu-Natal,Ethekwini MM,16.0,2024-04-15,ENV-COV-24-0734,ENV-COV-24-0734,Northern Wastewater Treatment Works (KZN)
 KwaZulu-Natal,Ethekwini MM,16.0,2024-04-15,ENV-COV-24-0734,ENV-COV-24-0734,Northern Wastewater Treatment Works (KZN)
 Gauteng,Ekurhuleni MM,16.0,2024-04-16,ENV-COV-24-0735,ENV-COV-24-0735,Hartebeesfontein Waterworks
+Gauteng,Ekurhuleni MM,16.0,2024-04-16,ENV-COV-24-0735,ENV-COV-24-0735,Hartebeesfontein Waterworks
+Gauteng,Johannesburg MM,16.0,2024-04-17,ENV-COV-24-0736,ENV-COV-24-0736,Motsoaledi
 Gauteng,Johannesburg MM,16.0,2024-04-17,ENV-COV-24-0736,ENV-COV-24-0736,Motsoaledi
 Gauteng,Johannesburg MM,16.0,2024-04-17,ENV-COV-24-0737,ENV-COV-24-0737,Klipsruit Yard (Before tunnel)
+Gauteng,Johannesburg MM,16.0,2024-04-17,ENV-COV-24-0737,ENV-COV-24-0737,Klipsruit Yard (Before tunnel)
+Gauteng,Johannesburg MM,16.0,2024-04-17,ENV-COV-24-0738,ENV-COV-24-0738,Klipspruit Veggies (After tunnel)
 Gauteng,Johannesburg MM,16.0,2024-04-17,ENV-COV-24-0738,ENV-COV-24-0738,Klipspruit Veggies (After tunnel)
 Gauteng,Johannesburg MM,16.0,2024-04-17,ENV-COV-24-0739,ENV-COV-24-0739,Bushkoppies Inlet
+Gauteng,Johannesburg MM,16.0,2024-04-17,ENV-COV-24-0739,ENV-COV-24-0739,Bushkoppies Inlet
+Gauteng,Johannesburg MM,16.0,2024-04-17,ENV-COV-24-0740,ENV-COV-24-0740,Bushkoppies Final
 Gauteng,Johannesburg MM,16.0,2024-04-17,ENV-COV-24-0740,ENV-COV-24-0740,Bushkoppies Final
 Gauteng,Johannesburg MM,16.0,2024-04-17,ENV-COV-24-0741,ENV-COV-24-0741,Goudkoppies Wastewater Treatment Works
+Gauteng,Johannesburg MM,16.0,2024-04-17,ENV-COV-24-0741,ENV-COV-24-0741,Goudkoppies Wastewater Treatment Works
+Gauteng,Ekurhuleni MM,16.0,2024-04-16,ENV-COV-24-0742,ENV-COV-24-0742,ERWAT Vlakplaat Wastewater Treatment Works
 Gauteng,Ekurhuleni MM,16.0,2024-04-16,ENV-COV-24-0742,ENV-COV-24-0742,ERWAT Vlakplaat Wastewater Treatment Works
 Limpopo,Vhembe DM,16.0,2024-04-15,ENV-COV-24-0744,ENV-COV-24-0744,Nancefield
+Limpopo,Vhembe DM,16.0,2024-04-15,ENV-COV-24-0744,ENV-COV-24-0744,Nancefield
+Mpumalanga,Ehlanzeni DM,16.0,2024-04-15,ENV-COV-24-0745,ENV-COV-24-0745,Kingstonvale
 Mpumalanga,Ehlanzeni DM,16.0,2024-04-15,ENV-COV-24-0745,ENV-COV-24-0745,Kingstonvale
 Mpumalanga,Nkomazi Municipality (Komatipoort),16.0,2024-04-15,ENV-COV-24-0746,ENV-COV-24-0746,Komatipoort Sewage plant
+Mpumalanga,Nkomazi Municipality (Komatipoort),16.0,2024-04-15,ENV-COV-24-0746,ENV-COV-24-0746,Komatipoort Sewage plant
+Free State,Mangaung MM,16.0,2024-04-16,ENV-COV-24-0747,ENV-COV-24-0747,Bloemspruit Wastewater Treatment Works
 Free State,Mangaung MM,16.0,2024-04-16,ENV-COV-24-0747,ENV-COV-24-0747,Bloemspruit Wastewater Treatment Works
 Free State,Mangaung MM,16.0,2024-04-16,ENV-COV-24-0748,ENV-COV-24-0748,Sterkwater Wastewater Treatment Works
+Free State,Mangaung MM,16.0,2024-04-16,ENV-COV-24-0748,ENV-COV-24-0748,Sterkwater Wastewater Treatment Works
+Western Cape,Cape Town MM,16.0,2024-04-16,ENV-COV-24-0749,ENV-COV-24-0749,Borcherds Quarry Wastewater Treatment Works
 Western Cape,Cape Town MM,16.0,2024-04-16,ENV-COV-24-0749,ENV-COV-24-0749,Borcherds Quarry Wastewater Treatment Works
 Western Cape,Cape Town MM,16.0,2024-04-16,ENV-COV-24-0750,ENV-COV-24-0750,Zandvleit Wastewater Treatment Works
+Western Cape,Cape Town MM,16.0,2024-04-16,ENV-COV-24-0750,ENV-COV-24-0750,Zandvleit Wastewater Treatment Works
+Eastern Cape,Buffalo City MM,16.0,2024-04-16,ENV-COV-24-0752,ENV-COV-24-0752,Mdantsane Wastewater Treatment Works
 Eastern Cape,Buffalo City MM,16.0,2024-04-16,ENV-COV-24-0752,ENV-COV-24-0752,Mdantsane Wastewater Treatment Works
 Gauteng,Ekurhuleni MM,16.0,2024-04-18,ENV-COV-24-0753,ENV-COV-24-0753,Midstream
+Gauteng,Ekurhuleni MM,16.0,2024-04-18,ENV-COV-24-0753,ENV-COV-24-0753,Midstream
+Gauteng,Ekurhuleni MM,16.0,2024-04-18,ENV-COV-24-0754,ENV-COV-24-0754,Olifantsfontein
 Gauteng,Ekurhuleni MM,16.0,2024-04-18,ENV-COV-24-0754,ENV-COV-24-0754,Olifantsfontein
 Gauteng,Ekurhuleni MM,16.0,2024-04-18,ENV-COV-24-0756,ENV-COV-24-0756,Tembisa Hospital East and West
+Gauteng,Ekurhuleni MM,16.0,2024-04-18,ENV-COV-24-0756,ENV-COV-24-0756,Tembisa Hospital East and West
+Gauteng,Ekurhuleni MM,16.0,2024-04-18,ENV-COV-24-0758,ENV-COV-24-0758,Namane Drive
 Gauteng,Ekurhuleni MM,16.0,2024-04-18,ENV-COV-24-0758,ENV-COV-24-0758,Namane Drive
 Gauteng,Ekurhuleni MM,16.0,2024-04-18,ENV-COV-24-0759,ENV-COV-24-0759,Sasol Garage
+Gauteng,Ekurhuleni MM,16.0,2024-04-18,ENV-COV-24-0759,ENV-COV-24-0759,Sasol Garage
+Gauteng,Tshwane MM,16.0,2024-04-19,ENV-COV-24-0760,ENV-COV-24-0760,Daspoort Wastewater Treatment Works
 Gauteng,Tshwane MM,16.0,2024-04-19,ENV-COV-24-0760,ENV-COV-24-0760,Daspoort Wastewater Treatment Works
 North West,Ngaka Modiri Molema DM,16.0,2024-04-16,ENV-COV-24-0761,ENV-COV-24-0761,Mmabatho Water Treatment Works
+North West,Ngaka Modiri Molema DM,16.0,2024-04-16,ENV-COV-24-0761,ENV-COV-24-0761,Mmabatho Water Treatment Works
+North West,Bojanala Platinum DM,16.0,2024-04-17,ENV-COV-24-0763,ENV-COV-24-0763,Rustenburg Wastewater Treatment Works
 North West,Bojanala Platinum DM,16.0,2024-04-17,ENV-COV-24-0763,ENV-COV-24-0763,Rustenburg Wastewater Treatment Works
 North West,Bojanala Platinum DM,16.0,2024-04-17,ENV-COV-24-0764,ENV-COV-24-0764,Boitekong
+North West,Bojanala Platinum DM,16.0,2024-04-17,ENV-COV-24-0764,ENV-COV-24-0764,Boitekong
+Gauteng,Tshwane MM,16.0,2024-04-19,ENV-COV-24-0766,ENV-COV-24-0766,Kalafong Hospital
 Gauteng,Tshwane MM,16.0,2024-04-19,ENV-COV-24-0766,ENV-COV-24-0766,Kalafong Hospital
 Gauteng,Tshwane MM,16.0,2024-04-19,ENV-COV-24-0767,ENV-COV-24-0767,Atteridgeville Train Station
+Gauteng,Tshwane MM,16.0,2024-04-19,ENV-COV-24-0767,ENV-COV-24-0767,Atteridgeville Train Station
+Gauteng,Tshwane MM,16.0,2024-04-19,ENV-COV-24-0768,ENV-COV-24-0768,Vergenoeg
 Gauteng,Tshwane MM,16.0,2024-04-19,ENV-COV-24-0768,ENV-COV-24-0768,Vergenoeg
 Eastern Cape,Nelson Mandela Bay MM,16.0,2024-04-15,ENV-COV-24-0770,ENV-COV-24-0770,Brickfield Pre-treatment Works
+Eastern Cape,Nelson Mandela Bay MM,16.0,2024-04-15,ENV-COV-24-0770,ENV-COV-24-0770,Brickfield Pre-treatment Works
+KwaZulu-Natal,Umkhanyakude DM,16.0,2024-04-17,ENV-COV-24-0771,ENV-COV-24-0771,Manguzi Wastewater Treatment Plant
 KwaZulu-Natal,Umkhanyakude DM,16.0,2024-04-17,ENV-COV-24-0771,ENV-COV-24-0771,Manguzi Wastewater Treatment Plant
 Northern Cape,Frances Baard DM,16.0,2024-04-17,ENV-COV-24-0773,ENV-COV-24-0773,Homevale Kimberley
+Northern Cape,Frances Baard DM,16.0,2024-04-17,ENV-COV-24-0773,ENV-COV-24-0773,Homevale Kimberley
+Gauteng,Ekurhuleni MM,17.0,2024-04-22,ENV-COV-24-0775,ENV-COV-24-0775,Midstream
 Gauteng,Ekurhuleni MM,17.0,2024-04-22,ENV-COV-24-0775,ENV-COV-24-0775,Midstream
 Gauteng,Ekurhuleni MM,17.0,2024-04-22,ENV-COV-24-0776,ENV-COV-24-0776,Olifantsfontein
+Gauteng,Ekurhuleni MM,17.0,2024-04-22,ENV-COV-24-0776,ENV-COV-24-0776,Olifantsfontein
+KwaZulu-Natal,Ethekwini MM,17.0,2024-04-22,ENV-COV-24-0782,ENV-COV-24-0782,Central Wastewater Treatment Works (KZN)
 KwaZulu-Natal,Ethekwini MM,17.0,2024-04-22,ENV-COV-24-0782,ENV-COV-24-0782,Central Wastewater Treatment Works (KZN)
 Gauteng,Tshwane MM,16.0,2024-04-17,ENV-COV-24-0783,ENV-COV-24-0783,Rooiwal Wastewater Treatment Works
+Gauteng,Tshwane MM,16.0,2024-04-17,ENV-COV-24-0783,ENV-COV-24-0783,Rooiwal Wastewater Treatment Works
+Gauteng,Tshwane MM,17.0,2024-04-23,ENV-COV-24-0784,ENV-COV-24-0784,Daspoort Wastewater Treatment Works
 Gauteng,Tshwane MM,17.0,2024-04-23,ENV-COV-24-0784,ENV-COV-24-0784,Daspoort Wastewater Treatment Works
 Gauteng,Tshwane MM,17.0,2024-04-23,ENV-COV-24-0785,ENV-COV-24-0785,SAPS Training College
+Gauteng,Tshwane MM,17.0,2024-04-23,ENV-COV-24-0785,ENV-COV-24-0785,SAPS Training College
+Gauteng,Tshwane MM,17.0,2024-04-23,ENV-COV-24-0786,ENV-COV-24-0786,Kalafong Hospital
 Gauteng,Tshwane MM,17.0,2024-04-23,ENV-COV-24-0786,ENV-COV-24-0786,Kalafong Hospital
 Gauteng,Tshwane MM,17.0,2024-04-23,ENV-COV-24-0787,ENV-COV-24-0787,Atteridgeville Train Station
+Gauteng,Tshwane MM,17.0,2024-04-23,ENV-COV-24-0787,ENV-COV-24-0787,Atteridgeville Train Station
+Gauteng,Tshwane MM,17.0,2024-04-23,ENV-COV-24-0788,ENV-COV-24-0788,Vergenoeg
 Gauteng,Tshwane MM,17.0,2024-04-23,ENV-COV-24-0788,ENV-COV-24-0788,Vergenoeg
 Gauteng,Tshwane MM,17.0,2024-04-23,ENV-COV-24-0789,ENV-COV-24-0789,Groenkloof
+Gauteng,Tshwane MM,17.0,2024-04-23,ENV-COV-24-0789,ENV-COV-24-0789,Groenkloof
+Gauteng,Johannesburg MM,17.0,2024-04-23,ENV-COV-24-0790,ENV-COV-24-0790,Tembisa Hospital East and West
 Gauteng,Johannesburg MM,17.0,2024-04-23,ENV-COV-24-0790,ENV-COV-24-0790,Tembisa Hospital East and West
 Gauteng,Johannesburg MM,17.0,2024-04-24,ENV-COV-24-0792,ENV-COV-24-0792,Motsoaledi
+Gauteng,Johannesburg MM,17.0,2024-04-24,ENV-COV-24-0792,ENV-COV-24-0792,Motsoaledi
+KwaZulu-Natal,Ethekwini MM,17.0,2024-04-22,ENV-COV-24-0793,ENV-COV-24-0793,Northern Wastewater Treatment Works (KZN)
 KwaZulu-Natal,Ethekwini MM,17.0,2024-04-22,ENV-COV-24-0793,ENV-COV-24-0793,Northern Wastewater Treatment Works (KZN)
 Mpumalanga,Ehlanzeni DM,17.0,2024-04-22,ENV-COV-24-0794,ENV-COV-24-0794,Komatipoort Sewage plant
+Mpumalanga,Ehlanzeni DM,17.0,2024-04-22,ENV-COV-24-0794,ENV-COV-24-0794,Komatipoort Sewage plant
+Gauteng,Johannesburg MM,17.0,2024-04-24,ENV-COV-24-0795,ENV-COV-24-0795,Klipsruit Yard (Before tunnel)
 Gauteng,Johannesburg MM,17.0,2024-04-24,ENV-COV-24-0795,ENV-COV-24-0795,Klipsruit Yard (Before tunnel)
 Gauteng,Johannesburg MM,17.0,2024-04-24,ENV-COV-24-0796,ENV-COV-24-0796,Klipspruit Veggies (After tunnel)
+Gauteng,Johannesburg MM,17.0,2024-04-24,ENV-COV-24-0796,ENV-COV-24-0796,Klipspruit Veggies (After tunnel)
+Gauteng,Johannesburg MM,17.0,2024-04-24,ENV-COV-24-0797,ENV-COV-24-0797,Bushkoppies Inlet
 Gauteng,Johannesburg MM,17.0,2024-04-24,ENV-COV-24-0797,ENV-COV-24-0797,Bushkoppies Inlet
 Gauteng,Johannesburg MM,17.0,2024-04-24,ENV-COV-24-0798,ENV-COV-24-0798,Bushkoppies Final
+Gauteng,Johannesburg MM,17.0,2024-04-24,ENV-COV-24-0798,ENV-COV-24-0798,Bushkoppies Final
+Gauteng,Johannesburg MM,17.0,2024-04-24,ENV-COV-24-0799,ENV-COV-24-0799,Goudkoppies Wastewater Treatment Works
 Gauteng,Johannesburg MM,17.0,2024-04-24,ENV-COV-24-0799,ENV-COV-24-0799,Goudkoppies Wastewater Treatment Works
 Mpumalanga,Ehlanzeni DM,17.0,2024-04-22,ENV-COV-24-0800,ENV-COV-24-0800,Kingstonvale
+Mpumalanga,Ehlanzeni DM,17.0,2024-04-22,ENV-COV-24-0800,ENV-COV-24-0800,Kingstonvale
+Free State,Mangaung MM,17.0,2024-04-23,ENV-COV-24-0803,ENV-COV-24-0803,Bloemspruit Wastewater Treatment Works
 Free State,Mangaung MM,17.0,2024-04-23,ENV-COV-24-0803,ENV-COV-24-0803,Bloemspruit Wastewater Treatment Works
 Free State,Mangaung MM,17.0,2024-04-23,ENV-COV-24-0805,ENV-COV-24-0804,Sterkwater Wastewater Treatment Works
+Free State,Mangaung MM,17.0,2024-04-23,ENV-COV-24-0805,ENV-COV-24-0804,Sterkwater Wastewater Treatment Works
+Eastern Cape,Buffalo City MM,17.0,2024-04-23,ENV-COV-24-0806,ENV-COV-24-0806,Mdantsane Wastewater Treatment Works
 Eastern Cape,Buffalo City MM,17.0,2024-04-23,ENV-COV-24-0806,ENV-COV-24-0806,Mdantsane Wastewater Treatment Works
 Gauteng,Tshwane MM,17.0,2024-04-24,ENV-COV-24-0807,ENV-COV-24-0807,Rooiwal Wastewater Treatment Works
+Gauteng,Tshwane MM,17.0,2024-04-24,ENV-COV-24-0807,ENV-COV-24-0807,Rooiwal Wastewater Treatment Works
+Western Cape,Cape Town MM,17.0,2024-04-23,ENV-COV-24-0808,ENV-COV-24-0808,Borcherds Quarry Wastewater Treatment Works
 Western Cape,Cape Town MM,17.0,2024-04-23,ENV-COV-24-0808,ENV-COV-24-0808,Borcherds Quarry Wastewater Treatment Works
 Gauteng,Ekurhuleni MM,17.0,2024-04-25,ENV-COV-24-0810,ENV-COV-24-0810,Olifantsfontein
+Gauteng,Ekurhuleni MM,17.0,2024-04-25,ENV-COV-24-0810,ENV-COV-24-0810,Olifantsfontein
+Gauteng,Ekurhuleni MM,17.0,2024-04-25,ENV-COV-24-0811,ENV-COV-24-0811,Midstream
 Gauteng,Ekurhuleni MM,17.0,2024-04-25,ENV-COV-24-0811,ENV-COV-24-0811,Midstream
 Gauteng,Ekurhuleni MM,17.0,2024-04-25,ENV-COV-24-0815,ENV-COV-24-0815,Namane Drive
+Gauteng,Ekurhuleni MM,17.0,2024-04-25,ENV-COV-24-0815,ENV-COV-24-0815,Namane Drive
+North West,Bojanala Platinum DM,17.0,2024-04-24,ENV-COV-24-0818,ENV-COV-24-0818,Rustenburg Wastewater Treatment Works
 North West,Bojanala Platinum DM,17.0,2024-04-24,ENV-COV-24-0818,ENV-COV-24-0818,Rustenburg Wastewater Treatment Works
 Northern Cape,Frances Baard DM,17.0,2024-04-24,ENV-COV-24-0819,ENV-COV-24-0819,Homevale Kimberley
+Northern Cape,Frances Baard DM,17.0,2024-04-24,ENV-COV-24-0819,ENV-COV-24-0819,Homevale Kimberley
 North West,Ngaka Modiri Molema DM,17.0,2024-04-23,ENV-COV-24-0820,ENV-COV-24-0820,Mahikeng Water Treatment Works
+North West,Ngaka Modiri Molema DM,17.0,2024-04-23,ENV-COV-24-0820,ENV-COV-24-0820,Mahikeng Water Treatment Works
+Gauteng,Tshwane MM,17.0,2024-04-26,ENV-COV-24-0822,ENV-COV-24-0822,SAPS Training College
+Gauteng,Tshwane MM,17.0,2024-04-26,ENV-COV-24-0826,ENV-COV-24-0826,Groenkloof
+Gauteng,Ekurhuleni MM,18.0,2024-04-29,ENV-COV-24-0831,ENV-COV-24-0831,Midstream
+Gauteng,Ekurhuleni MM,18.0,2024-04-29,ENV-COV-24-0832,ENV-COV-24-0832,Olifantsfontein
+Gauteng,Ekurhuleni MM,18.0,2024-04-29,ENV-COV-24-0833,ENV-COV-24-0833,Tembisa Mall
+Gauteng,Ekurhuleni MM,18.0,2024-04-29,ENV-COV-24-0836,ENV-COV-24-0836,Namane Drive
+Gauteng,Tshwane MM,28.0,2024-04-30,ENV-COV-24-0840,ENV-COV-24-0840,SAPS Training College
+Gauteng,Tshwane MM,18.0,2024-04-30,ENV-COV-24-0844,ENV-COV-24-0844,Laudium
+Gauteng,Tshwane MM,18.0,2024-04-30,ENV-COV-24-0845,ENV-COV-24-0845,Groenkloof
+Gauteng,Ekurhuleni MM,18.0,2024-04-30,ENV-COV-24-0846,ENV-COV-24-0846,Northern Wastewater Treatment Works (GP)
+Gauteng,Ekurhuleni MM,18.0,2024-04-30,ENV-COV-24-0847,ENV-COV-24-0847,Hartebeesfontein Waterworks
+KwaZulu-Natal,Ethekwini MM,18.0,2024-04-28,ENV-COV-24-0849,ENV-COV-24-0849,Central Wastewater Treatment Works (KZN)
+KwaZulu-Natal,Ethekwini MM,18.0,2024-04-28,ENV-COV-24-0850,ENV-COV-24-0850,Northern Wastewater Treatment Works (KZN)
+Gauteng,Ekurhuleni MM,18.0,2024-05-02,ENV-COV-24-0855,ENV-COV-24-0855,Tembisa Hospital Downstream
+Mpumalanga,Ehlanzeni DM,18.0,2024-05-02,ENV-COV-24-862,ENV-COV-24-0862,Kingstonvale
+Western Cape,,18.0,2024-04-30,ENV-COV-24-0874,ENV-COV-24-0874,Borcherds Quarry Wastewater Treatment Works
+Western Cape,,18.0,2024-04-30,ENV-COV-24-0875,ENV-COV-24-0875,Zandvleit Wastewater Treatment Works
+Northern Cape,Frances Baard DM,18.0,2024-05-02,ENV-COV-24-0877,ENV-COV-24-0877,Homevale Kimberley
+Gauteng,Umkhanyakude DM,18.0,2024-04-29,ENV-COV-24-0878,ENV-COV-24-0878,Jozini Wastewater Treatment Plant
+Gauteng,Ekurhuleni MM,19.0,2024-05-06,ENV-COV-24-0880,ENV-COV-24-0880,Olifantsfontein
+Gauteng,Ekurhuleni MM,19.0,2024-05-06,ENV-COV-24-0883,ENV-COV-24-0883,Tembisa Hospital Downstream
+Gauteng,Tshwane MM,19.0,2024-05-07,ENV-COV-24-0891,ENV-COV-24-0891,Daspoort Wastewater Treatment Works
+Gauteng,Tshwane MM,19.0,2024-05-07,ENV-COV-24-0894,ENV-COV-24-0894,Atteridgeville Train Station
+Gauteng,Johannesburg MM,19.0,2024-05-08,ENV-COV-24-0898,ENV-COV-24-0898,Goudkoppies Wastewater Treatment Works
+KwaZulu-Natal,Ethekwini MM,19.0,2024-05-06,ENV-COV-24-0900,ENV-COV-24-0900,Northern Wastewater Treatment Works (KZN)
+Gauteng,Johannesburg MM,19.0,2024-05-07,ENV-COV-24-0901,ENV-COV-24-0901,Northern Wastewater Treatment Works (GP)
+Gauteng,Johannesburg MM,19.0,2024-05-08,ENV-COV-24-0906,ENV-COV-24-0906,Bushkoppies Final
+Free State,Mangaung MM,19.0,2024-05-07,ENV-COV-24-0910,ENV-COV-24-0910,Sterkwater Wastewater Treatment Works
+Mpumalanga,Ehlanzeni DM,19.0,2024-05-06,ENV-COV-24-0913,ENV-COV-24-0913,Kingstonvale
+Western Cape,Cape Town MM,19.0,2024-05-07,ENV-COV-24-0915,ENV-COV-24-0915,Borcherds Quarry Wastewater Treatment Works
+Gauteng,Ekurhuleni MM,19.0,2024-05-09,ENV-COV-24-0917,ENV-COV-24-0917,Olifantsfontein
+Gauteng,Ekurhuleni MM,19.0,2024-05-09,ENV-COV-24-0918,ENV-COV-24-0918,Midstream
+Gauteng,Ekurhuleni MM,19.0,2024-05-09,ENV-COV-24-0922,ENV-COV-24-0922,Namane Drive
+Gauteng,Ekurhuleni MM,19.0,2024-05-09,ENV-COV-24-0924,ENV-COV-24-0924,Sasol Garage
+North West,Ngaka Modiri Molema DM,19.0,2024-05-07,ENV-COV-24-0926,ENV-COV-24-0926,Mmabatho Water Treatment Works
+North West,Bojanala Platinum DM,19.0,2024-05-08,ENV-COV-24-0927,ENV-COV-24-0927,Rustenburg Wastewater Treatment Works
+Gauteng,Ekurhuleni MM,19.0,2024-05-07,ENV-COV-24-0928,ENV-COV-24-0928,Hartebeesfontein Waterworks
+Gauteng,Tshwane MM,19.0,2024-05-10,ENV-COV-24-0932,ENV-COV-24-0932,Atteridgeville Train Station
+Gauteng,Tshwane MM,19.0,2024-05-10,ENV-COV-24-0934,ENV-COV-24-0934,Laudium
+Gauteng,Tshwane MM,19.0,2024-05-10,ENV-COV-24-0935,ENV-COV-24-0935,Groenkloof
+Northern Cape,Frances Baard DM,19.0,2024-05-09,ENV-COV-24-0937,ENV-COV-24-0937,Homevale Kimberley
+Gauteng,Ekurhuleni MM,20.0,2024-05-13,ENV-COV-24-0940,ENV-COV-24-0940,Midstream
+Gauteng,Ekurhuleni MM,20.0,2024-05-13,ENV-COV-24-0942,ENV-COV-24-0942,Tembisa Mall
+Gauteng,Ekurhuleni MM,20.0,2024-05-13,ENV-COV-24-0946,ENV-COV-24-0946,Moloreng
+Gauteng,Ekurhuleni MM,20.0,2024-05-13,ENV-COV-24-0947,ENV-COV-24-0947,Sasol Garage
+Gauteng,Tshwane MM,19.0,2024-05-08,ENV-COV-24-0948,ENV-COV-24-0948,Rooiwal Wastewater Treatment Works
+,,,,,ENV-COV-24-0949,
+,,,,,ENV-COV-24-0951,
+,,,,,ENV-COV-24-0955,
+,,,,,ENV-COV-24-0956,
 Western Cape,Cape Town MM,15.0,2021-04-12,ENV-NIC-21-0146,ENV-NIC-21-0146,Zandvleit Wastewater Treatment Works
 KwaZulu-Natal,Ethekwini MM,17.0,2021-04-26,ENV-NIC-21-0168,ENV-NIC-21-0168,Northern Wastewater Treatment Works (KZN)
 KwaZulu-Natal,Ethekwini MM,21.0,2021-05-24,ENV-NIC-21-0207,ENV-NIC-21-0207,Central Wastewater Treatment Works (KZN)
