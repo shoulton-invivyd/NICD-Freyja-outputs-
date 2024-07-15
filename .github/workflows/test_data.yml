@@ -39,27 +39,3 @@ jobs:
         run: |
           conda activate test
           pytest
-
-      - name: Clone 
-        shell: bash -l {0}
-        run: |
-            eval `ssh-agent -s`
-            ssh-add - <<< '${{ secrets.DASHBOARD_PRIVATE_KEY }}'
-            git config --global user.name "joshuailevy"
-            git config --global user.email "joshua.levy16@gmail.com"
-            git clone git@github.com:NICD-Wastewater-Genomics/Wastewater-Dashboard.git
-            cp scripts/NICD_daily_smoothed.csv Wastewater-Dashboard/Dashboard/data/
-            cp scripts/NICD_monthly.csv Wastewater-Dashboard/Dashboard/data/
-            cp scripts/color_map.json Wastewater-Dashboard/Dashboard/data/
-            cp scripts/merged_data.tsv Wastewater-Dashboard/Dashboard/data/
-            cd Wastewater-Dashboard
-    
-      - name: Push
-        run: |
-          if [[($(git status Dashboard/data/merged_data.tsv --porcelain | wc -c) -ne 0)]]; then
-            git add --all
-            git commit -m "automated core data update"
-            git push origin master
-          else
-            echo "no new samples, nothing to do"
-          fi
