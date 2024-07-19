@@ -7,6 +7,7 @@ on:
   #   - cron: '0 0 * * *'
   push:
     branches: [ "main" ]
+    paths: ['sample_metadata.csv','agg_demixed.tsv']
 
 jobs:
   build:
@@ -45,8 +46,8 @@ jobs:
           python make_catchment_plots.py
           git config --global user.name "joshuailevy"
           git config --global user.email "joshua.levy16@gmail.com"
-          if [[($(git status ../sample_metadata.csv --porcelain | wc -c) -ne 0)]]; then
-            echo "new samples were added, remaking plots"
+          if [[($(git status ../figures/ --porcelain | wc -c) -ne 0)]]; then
+            echo "remaking plots"
             git add ../figures/
             git add .
             git commit -m "updated figures"
