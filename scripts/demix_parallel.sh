@@ -1,4 +1,6 @@
 #!/bin/bash
+freyja update
+freyja update --outdir . #to ensure files end up in this dir
 my_func() {
     fn=$1
     depthfolder=$2
