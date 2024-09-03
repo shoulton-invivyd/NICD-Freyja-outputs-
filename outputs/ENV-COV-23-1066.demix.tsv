@@ -1,6 +1,6 @@
-	/RAW/Depths_TSV_all_copy_B/TSV_all/TSV/ENV-COV-23-1066.tsv
-summarized	[('BA.2.86* (BA.2.86X)', 0.9999999999993758)]
+	../variants/ENV-COV-23-1066.tsv
+summarized	[('BA.2.86* (BA.2.86.X)', 0.9999999809743771)]
 lineages	BA.2.86.3 BA.2.86
-abundances	0.78391700 0.21608300
-resid	5.522409129350976
+abundances	0.78391699 0.21608299
+resid	5.528480941326398
 coverage	83.00170551449688

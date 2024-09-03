@@ -1,6 +1,6 @@
-	/RAW/Depths_TSV_all_copy_B/TSV_all/TSV/ENV-NIC-22-0312.tsv
-summarized	[('Omicron', 0.9994201790402002)]
-lineages	BA.4.8 BA.5.11
-abundances	0.51505307 0.48436711
-resid	6.452377939030692
+	../variants/ENV-NIC-22-0312.tsv
+summarized	[('Omicron', 0.9999998736896185)]
+lineages	BA.4.8 BA.5.11 XAD BE.3
+abundances	0.51505302 0.48436769 0.00028999 0.00028918
+resid	6.456460666617726
 coverage	52.84754038056382

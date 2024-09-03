@@ -1,6 +1,6 @@
-	/RAW/Depths_TSV_all_copy_B/TSV_all/TSV/ENV-COV-23-1155.tsv
-summarized	[('Omicron', 0.9999999870148268)]
-lineages	BH.1 BA.2.38.3 BA.2.10.4
-abundances	0.33333350 0.33333350 0.33333299
-resid	2.7135933537103285
+	../variants/ENV-COV-23-1155.tsv
+summarized	[('Omicron', 0.9999989515457419), ('XBB.1.5* [Omicron (XBB.1.5.X)]', 2.321399512048707e-07)]
+lineages	BH.1 BA.2.38.3 BA.2.10.4 JB.2 BQ.1.1.57
+abundances	0.33333341 0.33333341 0.33333191 0.00000023 0.00000022
+resid	2.7135932873316913
 coverage	10.932013510350131

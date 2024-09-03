@@ -1,6 +1,6 @@
-	/RAW/Depths_TSV_all_copy_B/TSV_all/TSV/ENV-COV-21-231.tsv
-summarized	[('Delta', 0.999999999995801)]
+	../variants/ENV-COV-21-231.tsv
+summarized	[('Delta', 0.9999999997311492)]
 lineages	B.1.617.2
 abundances	1.00000000
-resid	2.2453809064761345
+resid	2.248555820956179
 coverage	12.838176771561383

@@ -1,6 +1,6 @@
-	/RAW/Depths_TSV_all_copy_B/TSV_all/TSV/ENV-COV-23-1135.tsv
-summarized	[('Other', 1.0000000000604163)]
-lineages	XDN XDQ
-abundances	0.50000000 0.50000000
-resid	1.0833986589009192e-08
+	../variants/ENV-COV-23-1135.tsv
+summarized	[('Other', 0.9999999943803535)]
+lineages	XDN XDQ.1.1 XDQ.3 XDQ.1 XDQ.2 XDW XDQ
+abundances	0.14285714 0.14285714 0.14285714 0.14285714 0.14285714 0.14285714 0.14285714
+resid	8.553549354263577e-10
 coverage	0.0

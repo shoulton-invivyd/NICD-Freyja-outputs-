@@ -1,6 +1,6 @@
-	depths_tsv_03_20/ENV_COV_24_0380_S16.tsv
-summarized	[('BA.2.86* (BA.2.86X)', 0.9999999999993454)]
-lineages	BA.2.86
+	../variants/ENV_COV_24_0380_S16.tsv
+summarized	[('BA.2.86* (BA.2.86.X)', 0.999999998642281)]
+lineages	MP.1
 abundances	1.00000000
-resid	8.673562092867984
+resid	8.903601603414359
 coverage	80.9249908035983
