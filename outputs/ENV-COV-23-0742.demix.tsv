@@ -1,6 +1,6 @@
-	/RAW/Depths_TSV_all_copy_B/TSV_all/TSV/ENV-COV-23-0742.tsv
-summarized	[('XBB* (XBB.X)', 0.9990369999992892)]
-lineages	JC.6
-abundances	0.99903700
-resid	9.221807774291381
+	../variants/ENV-COV-23-0742.tsv
+summarized	[('XBB* (XBB.X)', 0.9999593306550492), ('XBB.1.5* [Omicron (XBB.1.5.X)]', 4.0586902818188895e-05)]
+lineages	JC.6 FP.3 JC.2 XBB.1.41.1 HS.1
+abundances	0.99903700 0.00055833 0.00019391 0.00017009 0.00004059
+resid	9.232199352765182
 coverage	78.93187974450724

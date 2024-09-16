@@ -1,6 +1,6 @@
-	/RAW/Depths_TSV_all_copy_B/TSV_all/TSV/ENV-COV-22-191.tsv
-summarized	[('Omicron', 0.9994110000001848)]
-lineages	BA.4.1.8
-abundances	0.99941100
-resid	0.8868574926395176
+	../variants/ENV-COV-22-191.tsv
+summarized	[('Omicron', 0.9999999987618361)]
+lineages	BA.4.1.8 BA.4.1.9 BA.5.1.16 BA.4.6.5 BA.5.1.36 BA.4.6.4
+abundances	0.99941100 0.00032628 0.00007131 0.00006878 0.00006369 0.00005893
+resid	1.198415038763026
 coverage	50.88118249005117

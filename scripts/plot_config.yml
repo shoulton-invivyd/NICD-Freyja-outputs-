@@ -35,22 +35,12 @@ BA.2.86.X:
     - "BA.2.86*"
   color: "#808000"
 
-HV.1.X:
-  name: "HV.1.X"
-  members:
-    - "HV.1*"
-  parent: "XBB.1.9.X"
-
-EG.5.X:
-  name: "EG.5.X"
-  members:
-    - "EG.5*"
-  parent: "XBB.1.9.X"
-
 XBB.1.9.X:
   name: "XBB.1.9.X"
   members:
     - "XBB.1.9*"
+    - "EG.5*"
+    - "HV.1*"
   color: "#ffb731"
 
 XBB.2.3.X:
@@ -83,16 +73,11 @@ XBC.X:
     - "XBC*"
   color: "#2E3190"
 
-BQ.1.1.X:
-  name: "BQ.1.1.X"
-  members:
-    - "BQ.1.1*"
-  parent: "BA.5.X"
-
 BQ.1.X:
   name: "BQ.1.X"
   members:
     - "BQ.1*"
+    - "BQ.1.1*"
   parent: "BA.5.X"
 
 BF.7.X:
