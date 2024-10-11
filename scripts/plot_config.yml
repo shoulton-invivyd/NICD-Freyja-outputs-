@@ -5,11 +5,11 @@ KP.3.X:
     - "KP.3*"
   parent: "BA.2.86.X"
 
-KP.2.X:
-  name: "KP.2.X"
-  members:
-    - "KP.2*"
-  parent: "BA.2.86.X"
+# KP.2.X:
+#   name: "KP.2.X"
+#   members:
+#     - "KP.2*"
+#   parent: "BA.2.86.X"
 
 KP.1.X:
   name: "KP.1.X"
