@@ -1,21 +1,21 @@
 # Configuration file for plotting colors, with inheritance shown with similar colors.  
-# KP.3.X:
-#   name: "KP.3.X"
-#   members:
-#     - "KP.3*"
-#   parent: "BA.2.86.X"
+KP.3.X:
+  name: "KP.3.X"
+  members:
+    - "KP.3*"
+  parent: "BA.2.86.X"
 
-# KP.2.X:
-#   name: "KP.2.X"
-#   members:
-#     - "KP.2*"
-#   parent: "BA.2.86.X"
+KP.2.X:
+  name: "KP.2.X"
+  members:
+    - "KP.2*"
+  parent: "BA.2.86.X"
 
-# KP.1.X:
-#   name: "KP.1.X"
-#   members:
-#     - "KP.1*"
-#   parent: "BA.2.86.X"
+KP.1.X:
+  name: "KP.1.X"
+  members:
+    - "KP.1*"
+  parent: "BA.2.86.X"
 
 BA.2.87.1.X:
   name: "BA.2.87.1.X"

@@ -7,7 +7,7 @@ on:
   #   - cron: '0 0 * * *'
   push:
     branches: [ "main" ]
-    paths: ['sample_metadata.csv','agg_demixed.tsv']
+    paths: ['scripts/plot_config.yml", sample_metadata.csv','agg_demixed.tsv']
 
 jobs:
   build:
