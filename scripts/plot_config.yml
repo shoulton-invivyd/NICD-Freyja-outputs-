@@ -1,4 +1,16 @@
 # Configuration file for plotting colors, with inheritance shown with similar colors.  
+XEC.9.X:
+  name: "XEC.9.X"
+  members:
+    - "XEC.9*"
+  parent: "XEC.X"
+
+XEC.X:
+  name: "XEC.X"
+  members:
+    - "XEC*"
+  color: "#FF00FF"
+
 KP.3.X:
   name: "KP.3.X"
   members:

@@ -1,6 +1,6 @@
 	../variants/ENV-COV-23-1005.tsv
-summarized	[('BA.2.86* (BA.2.86.X)', 0.9999999575919158)]
+summarized	[('BA.2.86* (BA.2.86.X)', 0.9999999923463387)]
 lineages	BA.2.86.2 BA.2.86.6
-abundances	0.81077597 0.18922398
-resid	13.791181012502186
+abundances	0.81077600 0.18922400
+resid	13.8011610581629
 coverage	87.20195298130622

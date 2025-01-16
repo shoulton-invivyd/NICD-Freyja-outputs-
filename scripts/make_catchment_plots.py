@@ -69,8 +69,8 @@ agg_df = prepLineageDict(agg_df,thresh=0.0000000001,config=plot_config,lineage_i
 groupNames = set(list(plot_config.keys()))
 processed_linDictMod = []
 for j, sampLabel in enumerate(agg_df.index):
-    linDictMod = copy.deepcopy(agg_df.loc[sampLabel, 'linDict'])
-    linDictModCopy = copy.deepcopy(agg_df.loc[sampLabel, 'linDict'])
+    linDictMod = copy.deepcopy(agg_df.loc[sampLabel, 'linDict'])[0]
+    linDictModCopy = copy.deepcopy(agg_df.loc[sampLabel, 'linDict'])[0]
     for rInd in linDictModCopy.keys():
         if rInd.startswith('X') and (rInd not in groupNames):
             if "Recombinants" in linDictMod.keys():
@@ -123,6 +123,7 @@ duplicates = agg_df[agg_df.index.duplicated(keep=False)]
 if len(duplicates)>0:
     print('Samples are duplicated.')
     print(duplicates)
+    agg_df = agg_df[~agg_df.index.duplicated()]
 
 queryType = "linDict"
 # build a dataframe 

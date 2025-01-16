@@ -1,6 +1,6 @@
 	../variants/ENV_COV_24_0405_S28.tsv
-summarized	[('BA.2.86* (BA.2.86.X)', 0.9999999998582225)]
-lineages	LV.1 BA.2.86.6
+summarized	[('BA.2.86* (BA.2.86.X)', 0.9999999999379514)]
+lineages	BA.2.86.6 LV.1
 abundances	0.50000000 0.50000000
-resid	3.20446179703608
+resid	3.2062656373760685
 coverage	17.088586429455237

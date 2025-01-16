@@ -1,6 +1,6 @@
 	../variants/ENV-COV-23-0764.tsv
-summarized	[('XBB.1.5* [Omicron (XBB.1.5.X)]', 0.9999999966401187)]
+summarized	[('XBB.1.5* [Omicron (XBB.1.5.X)]', 0.9999999946937276)]
 lineages	JB.2.1
-abundances	1.00000000
-resid	10.023137350025163
+abundances	0.99999999
+resid	10.029133103203245
 coverage	93.43209711400193

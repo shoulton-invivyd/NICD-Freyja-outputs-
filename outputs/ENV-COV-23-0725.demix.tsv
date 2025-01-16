@@ -1,6 +1,6 @@
 	../variants/ENV-COV-23-0725.tsv
-summarized	[('XBB* (XBB.X)', 0.9999999730964351)]
+summarized	[('XBB* (XBB.X)', 0.999999982394506)]
 lineages	JC.3 XBB.1.41.1 JC.6
 abundances	0.34784799 0.34784799 0.30430400
-resid	6.123781745477396
+resid	6.125173680724881
 coverage	58.54262114169147

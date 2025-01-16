@@ -1,6 +1,6 @@
 	../variants/ENV-COV-22-72.tsv
-summarized	[('Delta', 0.999999996973498)]
+summarized	[('Delta', 0.9999999023989514)]
 lineages	AY.36.1
-abundances	1.00000000
-resid	0.7781512502794213
+abundances	0.99999990
+resid	0.7781512592840735
 coverage	0.0

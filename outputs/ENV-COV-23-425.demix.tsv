@@ -1,6 +1,6 @@
 	../variants/ENV-COV-23-425.tsv
-summarized	[('XBB.1.9.1* [Omicron (XBB.1.9.1.X)]', 0.9999999971109036)]
+summarized	[('XBB.1.9.1* [Omicron (XBB.1.9.1.X)]', 0.9999999975595861)]
 lineages	FL.4.8 FL.4
 abundances	0.50000000 0.50000000
-resid	1.789920830784865
+resid	1.7886020992037546
 coverage	28.117580175902084

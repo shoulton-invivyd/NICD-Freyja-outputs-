@@ -1,6 +1,6 @@
 	../variants/ENV-COV-23-0831.tsv
-summarized	[('Omicron', 0.9999999748894174)]
+summarized	[('Omicron', 0.9999999685217208)]
 lineages	BA.2.87.1 BA.5.5.1 BA.5
-abundances	0.99955900 0.00028678 0.00015420
-resid	7.540330030887999
+abundances	0.99955900 0.00028678 0.00015419
+resid	7.620845018167213
 coverage	50.112028893422064
