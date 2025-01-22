@@ -1,4 +1,4 @@
-name: Combined Freyja NGS analysis and cryptic variant detection
+name: Freyja pipeline
 
 # on:
 #   schedule:
@@ -13,6 +13,10 @@ on:
 jobs:
   check_samples_to_run:
     runs-on: ubuntu-latest
+    
+    permissions:
+      contents: 'read'
+      id-token: 'write'
 
     # outputs:
     #   run_rest_jobs: ${{ steps.check_samples_to_run.outputs.run_jobs }}
@@ -23,17 +27,18 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: 'Set up gcloud SDK'
-        uses: 'google-github-actions/setup-gcloud@v2'
-        with:
-          version: '>= 363.0.0'
-
       - id: 'auth'
         name: 'Authenticate with gcloud'
         uses: 'google-github-actions/auth@v2'
         with:
           workload_identity_provider: 'projects/12767718289/locations/global/workloadIdentityPools/github/providers/freyja-sra'
           service_account: 'outbreak-ww@andersen-lab-primary.iam.gserviceaccount.com'
+
+      - name: 'Set up gcloud SDK'
+        uses: 'google-github-actions/setup-gcloud@v2'
+        with:
+          version: '>= 363.0.0'
+
     
       - name: 'List samples to run'
         run: |
