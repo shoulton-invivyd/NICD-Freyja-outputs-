@@ -31,8 +31,8 @@ jobs:
         name: 'Authenticate with gcloud'
         uses: 'google-github-actions/auth@v2'
         with:
-          workload_identity_provider: 'projects/12767718289/locations/global/workloadIdentityPools/github/providers/freyja-sra'
-          service_account: 'outbreak-ww@andersen-lab-primary.iam.gserviceaccount.com'
+          project_id: 'andersen-lab-primary'
+          workload_identity_provider: 'projects/12767718289/locations/global/workloadIdentityPools/github/providers/nicd-freyja-outputs'
 
       - name: 'Set up gcloud SDK'
         uses: 'google-github-actions/setup-gcloud@v2'
@@ -43,8 +43,8 @@ jobs:
       - name: 'List samples to run'
         run: |
                 gcloud storage ls -r gs://modjadji-genomics/NICD-WW/fastqs | grep -o '.*\.fastq\.gz$' | sed 's|.*/||; s|_S.*\.fastq\.gz$||' > samples_in_bucket.txt
-                ls outputs | grep -o '.*\.tsv$' | sed 's|.*/||; s|\.demix.tsv$||' > samples_processed.txt
-                comm -23 samples_in_bucket.txt samples_processed.txt > samples_to_run.txt
+                # ls outputs | grep -o '.*\.tsv$' | sed 's|.*/||; s|\.demix.tsv$||' > samples_processed.txt
+                # comm -23 samples_in_bucket.txt samples_processed.txt > samples_to_run.txt
 
 
   # run_samples:
