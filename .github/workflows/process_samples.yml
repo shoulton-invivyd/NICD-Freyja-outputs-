@@ -42,7 +42,7 @@ jobs:
     
       - name: 'List samples to run'
         run: |
-                gcloud storage ls -r gs://modjadji-genomics/NICD-WW/fastqs | grep -o '.*\.fastq\.gz$' | sed 's|.*/||; s|_S.*\.fastq\.gz$||' > samples_in_bucket.txt
+                gcloud storage ls -r gs://modjadji-genomics/NICD-WW/fastqs # | grep -o '.*\.fastq\.gz$' | sed 's|.*/||; s|_S.*\.fastq\.gz$||' > samples_in_bucket.txt
                 # ls outputs | grep -o '.*\.tsv$' | sed 's|.*/||; s|\.demix.tsv$||' > samples_processed.txt
                 # comm -23 samples_in_bucket.txt samples_processed.txt > samples_to_run.txt
 
