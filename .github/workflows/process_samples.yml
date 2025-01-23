@@ -18,9 +18,6 @@ jobs:
       contents: 'read'
       id-token: 'write'
 
-    # outputs:
-    #   run_rest_jobs: ${{ steps.check_samples_to_run.outputs.run_jobs }}
-
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
@@ -38,49 +35,24 @@ jobs:
         uses: 'google-github-actions/setup-gcloud@v2'
         with:
           version: '>= 363.0.0'
-
     
       - name: 'List samples to run'
+        id: list_samples
         run: |
-                gcloud storage ls -r gs://modjadji-genomics/NICD-WW/fastqs # | grep -o '.*\.fastq\.gz$' | sed 's|.*/||; s|_S.*\.fastq\.gz$||' > samples_in_bucket.txt
-                # ls outputs | grep -o '.*\.tsv$' | sed 's|.*/||; s|\.demix.tsv$||' > samples_processed.txt
-                # comm -23 samples_in_bucket.txt samples_processed.txt > samples_to_run.txt
+                gcloud storage ls -r gs://modjadji-genomics/NICD-WW/fastqs > fastq_urls.txt
+                cat fastq_urls.txt | grep -o '.*\.fastq\.gz$' | sed 's|.*/||; s|_R.*\.fastq\.gz$||' > samples_in_bucket.txt
+                ls outputs | grep -o '.*\.tsv$' | sed 's|.*/||; s|\.demix.tsv$||' > samples_processed.txt
+                comm -23 samples_in_bucket.txt samples_processed.txt | awk '!seen[$0]++' > samples_to_run.txt
+                while read sample; do
+                  grep $sample fastq_urls.txt >> samples_to_run_urls.txt
+                done < samples_to_run.txt
 
-
-  # run_samples:
-  #     needs: [check_samples_to_run]
-  #     if: needs.check_samples_to_run.outputs.run_rest_jobs == 'true'
-  #     permissions:
-  #       contents: write
-  #       id-token: write
-
-  #     runs-on: ubuntu-latest
-
-  #     steps:
-  #       - name: Checkout main
-  #         uses: actions/checkout@v4
-  #         with:
-  #           token: ${{ secrets.GITHUB_TOKEN }}
-            
-  #       - name: Setup nextflow
-  #         uses: nf-core/setup-nextflow@v1
-        
-  #       - name: 'Set up Cloud SDK'
-  #         uses: 'google-github-actions/setup-gcloud@v2'
-  #         with:
-  #           version: '>= 363.0.0'
-        
-  #       - id: 'auth'
-  #         name: 'Authenticate with gcloud'
-  #         uses: 'google-github-actions/auth@v2'
-  #         with:
-  #           workload_identity_provider: 'projects/12767718289/locations/global/workloadIdentityPools/github/providers/freyja-sra'
-  #           service_account: 'outbreak-ww@andersen-lab-primary.iam.gserviceaccount.com'
-
-  #       - name: 'Get accession list'
-  #         id: get_accession_list
-  #         run: |
-  #               python scripts/get_accession_list.py $BATCH_SIZE
+      - name: 'Fetch fastqs'
+        run: |
+                mkdir fastqs
+                while read url; do
+                  gcloud storage cp $url fastqs/
+                done < samples_to_run_urls.txt
 
   #       - name: Run pipeline on new samples
   #         run: |
