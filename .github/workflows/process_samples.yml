@@ -35,6 +35,9 @@ jobs:
         uses: 'google-github-actions/setup-gcloud@v2'
         with:
           version: '>= 363.0.0'
+
+      - name: Set up nextflow
+        uses: nf-core/setup-nextflow@v1
     
       - name: 'List samples to run'
         id: list_samples
@@ -47,6 +50,9 @@ jobs:
                   grep $sample fastq_urls.txt >> samples_to_run_urls.txt
                 done < samples_to_run.txt
 
+                echo "Samples to run:"
+                cat samples_to_run.txt | wc -l
+
       - name: 'Fetch fastqs'
         run: |
                 mkdir fastqs
@@ -54,16 +60,13 @@ jobs:
                   gcloud storage cp $url fastqs/
                 done < samples_to_run_urls.txt
 
-  #       - name: Run pipeline on new samples
-  #         run: |
-  #                 export NXF_ENABLE_VIRTUAL_THREADS=false
-  #                 nextflow run main.nf \
-  #                   --accession_list data/accession_list.csv \
-  #                   --num_samples $BATCH_SIZE \
-  #                   -profile docker \
-  #                   -entry aspera &
-  #                 BG_PID=$!
-  #                 wait $BG_PID
+      - name: Run pipeline on new samples
+        run: |
+                nextflow run https://github.com/andersen-lab/Freyja-nf \ 
+                  --fastq_dir fastqs \
+                  --output freyja_nf_outputs
+                BG_PID=$!
+                wait $BG_PID
 
   #       - name: 'Run cryptic variant detection'
   #         run: |
