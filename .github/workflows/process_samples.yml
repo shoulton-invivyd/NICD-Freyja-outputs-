@@ -67,10 +67,11 @@ jobs:
         run: |
                 nextflow run https://github.com/andersen-lab/Freyja-nf \ 
                   -entry fastq \
+                  --fastq_dir fastq \
                   --output freyja_nf_outputs
                 BG_PID=$!
                 wait $BG_PID
-#
+
   #       - name: 'Run cryptic variant detection'
   #         run: |
   #               python scripts/cryptic_variants.py...
