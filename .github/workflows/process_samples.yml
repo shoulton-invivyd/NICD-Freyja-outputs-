@@ -13,7 +13,7 @@ env:
 
 jobs:
 
-  check_samples_to_run:
+  process_samples:
     runs-on: ubuntu-latest
     
     permissions:
@@ -67,6 +67,7 @@ jobs:
       - name: Run pipeline on new samples
         run: |
                 nextflow run https://github.com/andersen-lab/Freyja-nf \ 
+                  -entry fastq \
                   --fastq_dir fastqs \
                   --output freyja_nf_outputs
                 BG_PID=$!
