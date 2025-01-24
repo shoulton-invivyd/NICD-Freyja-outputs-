@@ -12,7 +12,6 @@ env:
   BATCH_SIZE: 10
 
 jobs:
-
   process_samples:
     runs-on: ubuntu-latest
     
@@ -59,16 +58,15 @@ jobs:
 
       - name: 'Fetch fastqs'
         run: |
-                mkdir fastqs
+                mkdir fastq
                 while read url; do
-                  gcloud storage cp $url fastqs/
+                  gcloud storage cp $url fastq/
                 done < samples_to_run_batch.txt
 
       - name: Run pipeline on new samples
         run: |
                 nextflow run https://github.com/andersen-lab/Freyja-nf \ 
                   -entry fastq \
-                  --fastq_dir fastqs \
                   --output freyja_nf_outputs
                 BG_PID=$!
                 wait $BG_PID
