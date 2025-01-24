@@ -8,9 +8,11 @@ on:
   push:
     branches:
       - freyja-gh-actions
-
+env:
+  BATCH_SIZE: 10
 
 jobs:
+
   check_samples_to_run:
     runs-on: ubuntu-latest
     
@@ -50,15 +52,17 @@ jobs:
                   grep $sample fastq_urls.txt >> samples_to_run_urls.txt
                 done < samples_to_run.txt
 
+                cat samples_to_run_urls.txt | head -n $BATCH_SIZE > samples_to_run_batch.txt
+
                 echo "Samples to run:"
-                cat samples_to_run.txt | wc -l
+                cat samples_to_run_urls.txt | wc -l
 
       - name: 'Fetch fastqs'
         run: |
                 mkdir fastqs
                 while read url; do
                   gcloud storage cp $url fastqs/
-                done < samples_to_run_urls.txt
+                done < samples_to_run_batch.txt
 
       - name: Run pipeline on new samples
         run: |
