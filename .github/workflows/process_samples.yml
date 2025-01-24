@@ -70,7 +70,7 @@ jobs:
                   --output freyja_nf_outputs
                 BG_PID=$!
                 wait $BG_PID
-
+#
   #       - name: 'Run cryptic variant detection'
   #         run: |
   #               python scripts/cryptic_variants.py...
