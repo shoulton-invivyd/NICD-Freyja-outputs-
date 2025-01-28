@@ -1,4 +1,11 @@
-# Configuration file for plotting colors, with inheritance shown with similar colors.  
+# Configuration file for plotting colors, with inheritance shown with similar colors. 
+
+LP.8.1.X:
+  name: "LP.8.1.X"
+  members:
+    - "LP.8.1*"
+  parent: "KP.1.X"
+
 XEC.9.X:
   name: "XEC.9.X"
   members:
@@ -29,11 +36,11 @@ KP.1.X:
     - "KP.1*"
   parent: "BA.2.86.X"
 
-BA.2.87.1.X:
-  name: "BA.2.87.1.X"
-  members:
-    - "BA.2.87.1*"
-  parent: "BA.2.X"
+# BA.2.87.1.X:
+#   name: "BA.2.87.1.X"
+#   members:
+#     - "BA.2.87.1*"
+#   parent: "BA.2.X"
 
 JN.1.X:
   name: "JN.1.X"
@@ -55,17 +62,17 @@ XBB.1.9.X:
     - "HV.1*"
   color: "#ffb731"
 
-XBB.2.3.X:
-  name: "XBB.2.3.X"
-  members:
-    - "XBB.2.3*"
-  parent: "XBB.X"
+# XBB.2.3.X:
+#   name: "XBB.2.3.X"
+#   members:
+#     - "XBB.2.3*"
+#   parent: "XBB.X"
 
-XBB.1.16.X:
-  name: "XBB.1.16.X"
-  members:
-    - "XBB.1.16*"
-  parent: "XBB.X"
+# XBB.1.16.X:
+#   name: "XBB.1.16.X"
+#   members:
+#     - "XBB.1.16*"
+#   parent: "XBB.X"
   
 XBB.1.5.X:
   name: "XBB.1.5.X"
@@ -77,13 +84,15 @@ XBB.X:
   name: "XBB.X"
   members:
     - "XBB*"
+    - "XBB.2.3*"
+    - "XBB.1.16*"
   color: "#e41a1c"
 
-XBC.X:
-  name: "XBC.X"
-  members:
-    - "XBC*"
-  color: "#2E3190"
+# XBC.X:
+#   name: "XBC.X"
+#   members:
+#     - "XBC*"
+#   color: "#2E3190"
 
 BQ.1.X:
   name: "BQ.1.X"
@@ -92,11 +101,11 @@ BQ.1.X:
     - "BQ.1.1*"
   parent: "BA.5.X"
 
-BF.7.X:
-  name: "BF.7.X"
-  members:
-    - "BF.7.X"
-  parent: "BA.5.X"
+# BF.7.X:
+#   name: "BF.7.X"
+#   members:
+#     - "BF.7.X"
+#   parent: "BA.5.X"
 
 BA.5.X:
   name: "BA.5.X"
@@ -121,6 +130,7 @@ BA.2.X:
   members:
     - "BA.2*"
     - "BN.1*"
+    - "BA.2.87.1*"
   color: "#4daf4a"
 
 # BA.1.1.X:

@@ -1,6 +1,6 @@
-	ENV_COV_24_2122_S98.tsv
-summarized	[('BA.2.86* (BA.2.86.X)', 0.9999999941797836)]
+	../variants/ENV_COV_24_2122_S98.tsv
+summarized	[('BA.2.86* (BA.2.86.X)', 0.9999999958388589)]
 lineages	KP.1.1
-abundances	0.99999999
-resid	9.699545490652431
+abundances	1.00000000
+resid	9.699545493461576
 coverage	74.26010768150353
