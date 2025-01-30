@@ -29,6 +29,6 @@ my_func() {
 }
 
 export -f my_func
-python get_samples_to_run.py | parallel -j 10 my_func 
+python get_samples_to_run.py | parallel -j 40 my_func 
 
 freyja aggregate ../outputs/ --output ../agg_demixed.tsv 
