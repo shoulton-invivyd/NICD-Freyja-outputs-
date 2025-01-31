@@ -9,7 +9,7 @@ on:
     branches:
       - freyja-gh-actions
 env:
-  BATCH_SIZE: 100 # Paired-read files, so 50 samples per batch
+  BATCH_SIZE: 200 # Paired-read files, so 100 samples per batch
 
 jobs:
   process_samples:
@@ -20,6 +20,23 @@ jobs:
       id-token: 'write'
 
     steps:
+
+      - name: Free Disk Space (Ubuntu)
+        uses: jlumbroso/free-disk-space@main
+        with:
+          # this might remove tools that are actually needed,
+          # if set to "true" but frees about 6 GB
+          tool-cache: false
+          
+          # all of these default to true, but feel free to set to
+          # "false" if necessary for your workflow
+          android: true
+          dotnet: true
+          haskell: true
+          large-packages: true
+          docker-images: true
+          swap-storage: true
+          
       - name: Checkout main
         uses: actions/checkout@v4
         with:
@@ -45,13 +62,13 @@ jobs:
         with:
           python-version: '3.10'
     
-      - name: 'List samples to run'
+      - name: List samples to run
         id: list_samples
         run: |
                 gcloud storage ls -r gs://modjadji-genomics/NICD-WW/fastqs > fastq_urls.txt
                 python scripts/fetch_new_nicd_samples.py
 
-      - name: 'Fetch fastqs'
+      - name: Fetch fastqs
         run: |
                 head -n ${{ env.BATCH_SIZE }} new_fastq_urls.txt > new_fastq_urls_batch.txt
                 mkdir fastq
@@ -65,9 +82,17 @@ jobs:
                 BG_PID=$!
                 wait $BG_PID
 
-  #       - name: 'Run cryptic variant detection'
-  #         run: |
-  #               python scripts/cryptic_variants.py...
+      - name: Move outputs
+        run: |
+                cp freyja_nf_outputs/demix/*.tsv outputs
+                cp freyja_nf_outputs/variants/*.tsv variants
+                cp freyja_nf_outputs/variants/*.depths depths
+                cp freyja_nf_outputs/covariants/*.tsv covariants
+ 
+      - name: Run cryptic variant detection
+        run: |
+              git clone https://github.com/andersen-lab/freyja-cryptic
+              python freyja-cryptic/detect_cryptic.py --covariants_dir covariants --metadata 
         
   #       - name: 'Commit and push changes'
   #         run: |
