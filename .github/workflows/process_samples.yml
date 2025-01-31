@@ -39,29 +39,24 @@ jobs:
 
       - name: Set up nextflow
         uses: nf-core/setup-nextflow@v1
+
+      - name: Set up python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
     
       - name: 'List samples to run'
         id: list_samples
         run: |
                 gcloud storage ls -r gs://modjadji-genomics/NICD-WW/fastqs > fastq_urls.txt
-                cat fastq_urls.txt | grep -o '.*\.fastq\.gz$' | sed 's|.*/||; s|_R.*\.fastq\.gz$||' > samples_in_bucket.txt
-                ls outputs | grep -o '.*\.tsv$' | sed 's|.*/||; s|\.demix.tsv$||' > samples_processed.txt
-                comm -23 samples_in_bucket.txt samples_processed.txt | awk '!seen[$0]++' > samples_to_run.txt
-                while read sample; do
-                  grep $sample fastq_urls.txt >> samples_to_run_urls.txt
-                done < samples_to_run.txt
-
-                cat samples_to_run_urls.txt | head -n $BATCH_SIZE > samples_to_run_batch.txt
-
-                echo "Samples to run:"
-                cat samples_to_run_urls.txt | wc -l
+                python scripts/fetch_new_nicd_samples.py
 
       - name: 'Fetch fastqs'
         run: |
                 mkdir fastq
                 while read url; do
                   gcloud storage cp $url fastq/
-                done < samples_to_run_batch.txt
+                done < new_fastq_urls.txt
 
       - name: Run pipeline on new samples
         run: |
