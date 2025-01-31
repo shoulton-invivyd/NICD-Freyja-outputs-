@@ -9,7 +9,7 @@ on:
     branches:
       - freyja-gh-actions
 env:
-  BATCH_SIZE: 10
+  BATCH_SIZE: 100 # Paired-read files, so 50 samples per batch
 
 jobs:
   process_samples:
@@ -53,10 +53,11 @@ jobs:
 
       - name: 'Fetch fastqs'
         run: |
+                head -n ${{ env.BATCH_SIZE }} new_fastq_urls.txt > new_fastq_urls_batch.txt
                 mkdir fastq
                 while read url; do
                   gcloud storage cp $url fastq/
-                done < new_fastq_urls.txt
+                done < new_fastq_urls_batch.txt
 
       - name: Run pipeline on new samples
         run: |
