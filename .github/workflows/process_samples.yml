@@ -89,20 +89,20 @@ jobs:
                 cp freyja_nf_outputs/variants/*.depths depths
                 cp freyja_nf_outputs/covariants/*.tsv covariants
  
-      - name: Run cryptic variant detection
-        run: |
-              git clone https://github.com/andersen-lab/freyja-cryptic
-              python freyja-cryptic/detect_cryptic.py --covariants_dir covariants --metadata 
+      # - name: Run cryptic variant detection
+      #   run: |
+      #         git clone https://github.com/andersen-lab/freyja-cryptic
+      #         python freyja-cryptic/detect_cryptic.py --covariants_dir covariants --metadata 
         
-  #       - name: 'Commit and push changes'
-  #         run: |
-  #               git config --local user.name "$GITHUB_ACTOR"
-  #               git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
-  #               git remote set-url origin https://github.com/andersen-lab/Freyja-SRA
-  #               git add data/all_metadata.csv
-  #               git commit -m "Update processed samples"
-  #               git push --force
+      - name: 'Commit and push changes'
+        run: |
+              git config --local user.name "$GITHUB_ACTOR"
+              git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
+              git remote set-url origin https://github.com/NICD-Wastewater-Genomics/NICD-Freyja-outputs-/tree/data-dump
+              git add outputs variants depths covariants
+              git commit -m "Update processed samples"
+              git push --force
 
-  #       - name: 'Clean workspace'
-  #         run: |
-  #               rm -rf ${{ github.workspace }}/*
+      - name: 'Clean workspace'
+        run: |
+              rm -rf ${{ github.workspace }}/*
