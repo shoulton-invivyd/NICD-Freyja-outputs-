@@ -1,10 +1,14 @@
 #!/bin/bash
 freyja update
 freyja update --outdir . #to ensure files end up in this dir
+
+# collect samples from last 120 days for rerunning
+awk -v dat="$(date -d '120 days ago' '+%Y/%m/%d')" -F ',' '$4 > dat {print $5}' ../sample_metadata.csv > recent_samples.txt
+
 my_func() {
     fn=$1
-    depthfolder=$2
-    output=$3
+    depthfolder='../depths/'
+    output='../outputs/'
 
     fn_out=${fn##*/}
     baseName=${fn##*/}
@@ -25,4 +29,9 @@ my_func() {
 }
 
 export -f my_func
-parallel -j 36 my_func ::: ../variants/* ::: ../depths/ ::: ../outputs/
+python get_samples_to_run.py | parallel -j 20 my_func 
+
+freyja aggregate ../outputs/ --output ../agg_demixed.tsv 
+
+python make_plot.py
+python make_catchment_plots.py
