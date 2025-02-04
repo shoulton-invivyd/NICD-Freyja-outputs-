@@ -9,7 +9,7 @@ on:
     branches:
       - freyja-gh-actions
 env:
-  BATCH_SIZE: 200 # Paired-read files, so 100 samples per batch
+  BATCH_SIZE: 20 # Paired-read files, so 100 samples per batch
 
 jobs:
   process_samples:
@@ -77,11 +77,6 @@ jobs:
                 cp freyja_nf_outputs/variants/*.depths depths
                 cp freyja_nf_outputs/covariants/*.tsv covariants
  
-      # - name: Run cryptic variant detection
-      #   run: |
-      #         git clone https://github.com/andersen-lab/freyja-cryptic
-      #         python freyja-cryptic/detect_cryptic.py --covariants_dir covariants --metadata 
-        
       - name: 'Commit and push changes'
         run: |
               git config --local user.name "$GITHUB_ACTOR"
@@ -89,7 +84,7 @@ jobs:
               git remote set-url origin https://github.com/NICD-Wastewater-Genomics/NICD-Freyja-outputs-/tree/data-dump
               git add outputs variants depths covariants
               git commit -m "Update processed samples"
-              git push --force
+              git push
 
       - name: 'Clean workspace'
         run: |
