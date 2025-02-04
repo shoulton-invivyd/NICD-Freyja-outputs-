@@ -9,7 +9,7 @@ on:
     branches:
       - freyja-gh-actions
 env:
-  BATCH_SIZE: 20 # Paired-read files, so 100 samples per batch
+  BATCH_SIZE: 100 # Paired-read files, so 100 samples per batch
 #
 jobs:
   process_samples:
