@@ -84,10 +84,9 @@ jobs:
           git remote set-url origin https://github.com/NICD-Wastewater-Genomics/NICD-Freyja-outputs-
           git fetch
           git branch --set-upstream-to=origin/data-dump
-          git pull
           git add outputs variants depths covariants
           git commit -m "Update processed samples"
-          git push origin HEAD:data-dump
+          git push origin HEAD:data-dump --force
 
       - name: 'Clean workspace'
         run: |
