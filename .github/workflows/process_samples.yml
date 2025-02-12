@@ -20,11 +20,6 @@ jobs:
       id-token: 'write'
 
     steps:
-    #   - name: Free Disk Space (Ubuntu)
-    #     uses: jlumbroso/free-disk-space@main
-    #     with:
-    #       tool-cache: false
-          
       - name: Checkout main
         uses: actions/checkout@v4
         with:
@@ -86,7 +81,7 @@ jobs:
               git branch --set-upstream-to=origin/data-dump
               git add outputs variants depths covariants
               git commit -m "Update processed samples"
-              git push
+              git push origin HEAD:data-dump
 
       - name: 'Clean workspace'
         run: |
