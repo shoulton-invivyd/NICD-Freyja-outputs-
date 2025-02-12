@@ -1,5 +1,6 @@
 name: Freyja pipeline
-
+description: |
+  https://github.com/andersen-lab/Freyja-nf
 on:
   schedule:
     - cron: '0 * * * *'
