@@ -82,6 +82,7 @@ jobs:
               git config --local user.name "$GITHUB_ACTOR"
               git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
               git remote set-url origin https://github.com/NICD-Wastewater-Genomics/NICD-Freyja-outputs/
+              git fetch
               git branch --set-upstream-to=origin/data-dump
               git add outputs variants depths covariants
               git commit -m "Update processed samples"
