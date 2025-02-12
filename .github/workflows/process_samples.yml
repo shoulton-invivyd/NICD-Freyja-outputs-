@@ -1,15 +1,11 @@
 name: Freyja pipeline
-#
-# on:
-#   schedule:
-#     - cron: '0 * * * *'
-#
+
 on:
-  push:
-    branches:
-      - freyja-gh-actions
+  schedule:
+    - cron: '0 * * * *'
+
 env:
-  BATCH_SIZE: 4 # Paired-read files, so 100 samples per batch
+  BATCH_SIZE: 200 # Paired-read files, so 100 samples per batch
 
 jobs:
   process_samples:
