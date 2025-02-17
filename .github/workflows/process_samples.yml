@@ -1,6 +1,7 @@
 name: Freyja pipeline
 description: |
   https://github.com/andersen-lab/Freyja-nf
+
 on:
   schedule:
     - cron: '0 0 * * *'
@@ -76,6 +77,14 @@ jobs:
           cp freyja_nf_outputs/variants/*.tsv variants
           cp freyja_nf_outputs/variants/*.depths depths
           cp freyja_nf_outputs/covariants/*.tsv covariants
+
+      - name: Merge development -> staging
+        uses: devmasx/merge-branch@master
+        with:
+          type: now
+          from_branch: main
+          target_branch: data-dump
+          github_token: ${{ secrets.GITHUB_TOKEN }}
  
       - name: 'Commit and push changes'
         run: |
