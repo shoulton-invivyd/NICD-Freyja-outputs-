@@ -5,9 +5,6 @@ description: |
 on:
   schedule:
     - cron: '0 0 * * *'
-  push:
-    branches:
-      - freyja-gh-actions
 
 env:
   BATCH_SIZE: 200 # Paired-read files, so 100 samples per batch
