@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     
 env:
-  BATCH_SIZE: 200 # Paired-read files, so 100 samples per batch
+  BATCH_SIZE: 100 # Paired-read files, so 50 samples per batch
 
 jobs:
   process_samples:
